@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -18,166 +17,101 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { background: var(--black); color: var(--white); font-family: 'Barlow', sans-serif; overflow-x: hidden; }
-
-nav {
-position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-padding: 16px 40px;
-display: flex; justify-content: space-between; align-items: center;
-background: rgba(10,10,10,0.96);
-backdrop-filter: blur(12px);
-border-bottom: 1px solid var(–border);
-}
-.nav-logo { font-family: ‘Bebas Neue’, sans-serif; font-size: 22px; color: var(–white); letter-spacing: 2px; text-decoration: none; }
-.nav-logo span { color: var(–yellow); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--white); letter-spacing: 2px; text-decoration: none; }
+.nav-logo span { color: var(--yellow); }
 .nav-right { display: flex; gap: 12px; align-items: center; }
 .nav-link { color: #888; font-size: 13px; font-weight: 600; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
-.nav-link:hover { color: var(–white); }
-.nav-cta { background: var(–yellow); color: var(–black); font-weight: 700; font-size: 13px; padding: 10px 22px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: opacity 0.2s; }
-.nav-cta:hover { opacity: 0.85; }
-
-.hero {
-min-height: 100vh;
-background: var(–black);
-display: flex; flex-direction: column; justify-content: flex-end;
-padding: 120px 40px 80px;
-position: relative; overflow: hidden;
-}
-.hero-bg-text {
-position: absolute; bottom: -40px; left: -10px;
-font-family: ‘Bebas Neue’, sans-serif;
-font-size: clamp(100px, 22vw, 280px);
-color: var(–white); opacity: 0.03;
-pointer-events: none; white-space: nowrap; line-height: 1;
-user-select: none;
-}
-.hero-accent {
-position: absolute; top: 20%; right: -80px;
-width: 400px; height: 400px;
-background: var(–yellow); border-radius: 50%; opacity: 0.05;
-pointer-events: none;
-}
-.insured-badge {
-display: inline-flex; align-items: center; gap: 8px;
-background: rgba(245,200,0,0.12); border: 1px solid rgba(245,200,0,0.3);
-color: var(–yellow); font-size: 11px; font-weight: 700;
-letter-spacing: 3px; text-transform: uppercase;
-padding: 7px 16px; margin-bottom: 28px; width: fit-content;
-}
-.hero h1 {
-font-family: ‘Bebas Neue’, sans-serif;
-font-size: clamp(56px, 13vw, 150px);
-line-height: 0.88; color: var(–white); margin-bottom: 8px;
-}
-.hero h1 .accent { color: var(–yellow); display: block; }
-.hero-sub {
-font-size: clamp(15px, 2vw, 19px); color: #777;
-max-width: 520px; margin: 24px 0 40px; line-height: 1.65;
-}
-.hero-sub strong { color: var(–white); font-weight: 700; }
+.nav-link:hover { color: var(--white); }
+.nav-cta { background: var(--yellow); color: var(--black); font-weight: 700; font-size: 13px; padding: 10px 22px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: opacity 0.2s; }
+.hero { min-height: 100vh; background: var(--black); display: flex; flex-direction: column; justify-content: flex-end; padding: 120px 40px 80px; position: relative; overflow: hidden; }
+.hero-bg-text { position: absolute; bottom: -40px; left: -10px; font-family: 'Bebas Neue', sans-serif; font-size: clamp(100px, 22vw, 280px); color: var(--white); opacity: 0.03; pointer-events: none; white-space: nowrap; line-height: 1; user-select: none; }
+.hero-accent { position: absolute; top: 20%; right: -80px; width: 400px; height: 400px; background: var(--yellow); border-radius: 50%; opacity: 0.05; pointer-events: none; }
+.insured-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,200,0,0.12); border: 1px solid rgba(245,200,0,0.3); color: var(--yellow); font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 7px 16px; margin-bottom: 28px; width: fit-content; }
+.hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(56px, 13vw, 150px); line-height: 0.88; color: var(--white); margin-bottom: 8px; }
+.hero h1 .accent { color: var(--yellow); display: block; }
+.hero-sub { font-size: clamp(15px, 2vw, 19px); color: #777; max-width: 520px; margin: 24px 0 40px; line-height: 1.65; }
+.hero-sub strong { color: var(--white); font-weight: 700; }
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-.btn-yellow { background: var(–yellow); color: var(–black); font-weight: 700; font-size: 15px; padding: 16px 36px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: transform 0.15s, box-shadow 0.15s; display: inline-block; }
-.btn-yellow:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(245,200,0,0.3); }
-.btn-outline { color: var(–white); font-weight: 600; font-size: 15px; padding: 16px 36px; text-decoration: none; border: 2px solid #333; letter-spacing: 1px; text-transform: uppercase; transition: border-color 0.2s, color 0.2s; display: inline-block; }
-.btn-outline:hover { border-color: var(–yellow); color: var(–yellow); }
-
-.ticker { background: var(–yellow); padding: 14px 0; overflow: hidden; white-space: nowrap; }
-.ticker-inner { display: inline-flex; gap: 0; animation: ticker 20s linear infinite; }
-.ticker-item { font-family: ‘Bebas Neue’, sans-serif; font-size: 18px; color: var(–black); letter-spacing: 2px; padding: 0 32px; }
-.ticker-dot { color: rgba(0,0,0,0.3); }
+.btn-yellow { background: var(--yellow); color: var(--black); font-weight: 700; font-size: 15px; padding: 16px 36px; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: transform 0.15s, box-shadow 0.15s; display: inline-block; }
+.btn-outline { color: var(--white); font-weight: 600; font-size: 15px; padding: 16px 36px; text-decoration: none; border: 2px solid #333; letter-spacing: 1px; text-transform: uppercase; transition: border-color 0.2s, color 0.2s; display: inline-block; }
+.ticker { background: var(--yellow); padding: 14px 0; overflow: hidden; white-space: nowrap; }
+.ticker-inner { display: inline-flex; animation: ticker 20s linear infinite; }
+.ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--black); letter-spacing: 2px; padding: 0 32px; }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
 .section { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
-.section-label { font-weight: 700; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(–yellow); margin-bottom: 12px; }
-.section-title { font-family: ‘Bebas Neue’, sans-serif; font-size: clamp(38px, 7vw, 68px); color: var(–white); line-height: 0.95; margin-bottom: 48px; }
-
+.section-label { font-weight: 700; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--yellow); margin-bottom: 12px; }
+.section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(38px, 7vw, 68px); color: var(--white); line-height: 0.95; margin-bottom: 48px; }
 .repairs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2px; }
-.repair-card { background: var(–gray); padding: 32px 26px; border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
-.repair-card:hover { border-left-color: var(–yellow); background: var(–mid); }
+.repair-card { background: var(--gray); padding: 32px 26px; border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
+.repair-card:hover { border-left-color: var(--yellow); background: var(--mid); }
 .repair-icon { font-size: 32px; margin-bottom: 14px; display: block; }
-.repair-card h3 { font-family: ‘Bebas Neue’, sans-serif; font-size: 24px; color: var(–white); margin-bottom: 8px; letter-spacing: 1px; }
+.repair-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--white); margin-bottom: 8px; letter-spacing: 1px; }
 .repair-card p { color: #666; font-size: 13px; line-height: 1.7; }
-
-.cleanouts-bg { background: var(–gray); padding: 80px 0; }
+.cleanouts-bg { background: var(--gray); padding: 80px 0; }
 .cleanouts-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
 .pricing-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2px; margin-top: 48px; }
-.price-card { background: var(–black); padding: 36px 28px; text-align: center; position: relative; border-top: 3px solid var(–border); transition: border-color 0.2s; }
-.price-card:hover { border-top-color: var(–yellow); }
-.price-card.featured { border-top-color: var(–yellow); background: #111; }
-.price-card.featured::before { content: ‘MOST POPULAR’; position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(–yellow); color: var(–black); font-size: 9px; font-weight: 800; letter-spacing: 3px; padding: 4px 12px; white-space: nowrap; }
+.price-card { background: var(--black); padding: 36px 28px; text-align: center; position: relative; border-top: 3px solid var(--border); transition: border-color 0.2s; }
+.price-card:hover { border-top-color: var(--yellow); }
+.price-card.featured { border-top-color: var(--yellow); background: #111; }
+.price-card.featured::before { content: 'MOST POPULAR'; position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--yellow); color: var(--black); font-size: 9px; font-weight: 800; letter-spacing: 3px; padding: 4px 12px; white-space: nowrap; }
 .price-medal { font-size: 28px; margin-bottom: 12px; display: block; }
-.price-name { font-family: ‘Bebas Neue’, sans-serif; font-size: 22px; color: var(–white); letter-spacing: 1px; margin-bottom: 8px; }
-.price-amount { font-family: ‘Bebas Neue’, sans-serif; font-size: 56px; color: var(–yellow); line-height: 1; margin-bottom: 12px; }
+.price-name { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--white); letter-spacing: 1px; margin-bottom: 8px; }
+.price-amount { font-family: 'Bebas Neue', sans-serif; font-size: 56px; color: var(--yellow); line-height: 1; margin-bottom: 12px; }
 .price-desc { color: #666; font-size: 13px; line-height: 1.6; }
-
 .cleanout-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 40px; }
 .cleanout-item { display: flex; align-items: flex-start; gap: 12px; }
-.cleanout-check { color: var(–yellow); font-size: 18px; margin-top: 2px; flex-shrink: 0; }
-.cleanout-item h4 { font-weight: 700; font-size: 14px; color: var(–white); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+.cleanout-check { color: var(--yellow); font-size: 18px; margin-top: 2px; flex-shrink: 0; }
+.cleanout-item h4 { font-weight: 700; font-size: 14px; color: var(--white); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
 .cleanout-item p { color: #666; font-size: 12px; line-height: 1.5; }
-
-.insurance-strip { background: var(–yellow); padding: 40px; display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; }
+.insurance-strip { background: var(--yellow); padding: 40px; display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; }
 .ins-item { text-align: center; }
 .ins-icon { font-size: 32px; margin-bottom: 8px; display: block; }
-.ins-item h4 { font-family: ‘Bebas Neue’, sans-serif; font-size: 20px; color: var(–black); letter-spacing: 1px; }
+.ins-item h4 { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--black); letter-spacing: 1px; }
 .ins-item p { font-size: 12px; color: rgba(0,0,0,0.5); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-
 .areas-section { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
 .areas-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
-.area-tag { background: var(–gray); color: #888; font-size: 13px; font-weight: 600; padding: 10px 20px; letter-spacing: 1px; text-transform: uppercase; border: 1px solid var(–border); transition: all 0.2s; }
-.area-tag:hover { background: var(–yellow); color: var(–black); border-color: var(–yellow); }
-
-.contact-section { background: var(–gray); padding: 80px 40px; }
+.area-tag { background: var(--gray); color: #888; font-size: 13px; font-weight: 600; padding: 10px 20px; letter-spacing: 1px; text-transform: uppercase; border: 1px solid var(--border); transition: all 0.2s; }
+.area-tag:hover { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+.contact-section { background: var(--gray); padding: 80px 40px; }
 .contact-inner { max-width: 680px; margin: 0 auto; text-align: center; }
-.contact-inner h2 { font-family: ‘Bebas Neue’, sans-serif; font-size: clamp(40px, 8vw, 76px); color: var(–white); line-height: 0.95; margin-bottom: 16px; }
+.contact-inner h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 8vw, 76px); color: var(--white); line-height: 0.95; margin-bottom: 16px; }
 .contact-inner p { color: #777; font-size: 16px; margin-bottom: 48px; line-height: 1.6; }
 .contact-form { display: flex; flex-direction: column; gap: 14px; text-align: left; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.contact-form input,
-.contact-form textarea,
-.contact-form select { background: var(–black); border: 2px solid var(–border); color: var(–white); font-family: ‘Barlow’, sans-serif; font-size: 15px; padding: 15px 18px; width: 100%; outline: none; transition: border-color 0.2s; appearance: none; }
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus { border-color: var(–yellow); }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder { color: #444; }
+.contact-form input, .contact-form textarea, .contact-form select { background: var(--black); border: 2px solid var(--border); color: var(--white); font-family: 'Barlow', sans-serif; font-size: 15px; padding: 15px 18px; width: 100%; outline: none; transition: border-color 0.2s; appearance: none; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--yellow); }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #444; }
 .contact-form textarea { height: 110px; resize: vertical; }
 .contact-form select option { background: #111; }
-.submit-btn { background: var(–yellow); color: var(–black); font-family: ‘Barlow’, sans-serif; font-weight: 800; font-size: 15px; padding: 18px; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; transition: transform 0.15s, box-shadow 0.15s; width: 100%; }
-.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(245,200,0,0.35); }
+.submit-btn { background: var(--yellow); color: var(--black); font-family: 'Barlow', sans-serif; font-weight: 800; font-size: 15px; padding: 18px; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; transition: transform 0.15s, box-shadow 0.15s; width: 100%; }
 .contact-alts { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; margin-top: 36px; }
-.contact-alts a { color: var(–yellow); text-decoration: none; font-weight: 700; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s; }
-.contact-alts a:hover { opacity: 0.7; }
-
+.contact-alts a { color: var(--yellow); text-decoration: none; font-weight: 700; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s; }
 footer { background: #050505; padding: 28px 40px; text-align: center; border-top: 1px solid #111; }
 footer p { color: #333; font-size: 12px; letter-spacing: 1px; }
-footer span { color: var(–yellow); }
-
+footer span { color: var(--yellow); }
 .fade { opacity: 0; transform: translateY(24px); animation: fadeIn 0.7s ease forwards; }
 .fade:nth-child(1) { animation-delay: 0.1s; }
 .fade:nth-child(2) { animation-delay: 0.25s; }
 .fade:nth-child(3) { animation-delay: 0.4s; }
 .fade:nth-child(4) { animation-delay: 0.55s; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
-
 @media (max-width: 640px) {
-nav { padding: 14px 20px; }
-.nav-link { display: none; }
-.hero { padding: 100px 24px 60px; }
-.section { padding: 60px 24px; }
-.cleanouts-inner { padding: 0 24px; }
-.cleanouts-bg { padding: 60px 0; }
-.areas-section { padding: 60px 24px; }
-.contact-section { padding: 60px 24px; }
-.insurance-strip { gap: 32px; padding: 32px 24px; }
-footer { padding: 24px 20px; }
-.form-row { grid-template-columns: 1fr; }
-.contact-alts { flex-direction: column; align-items: center; gap: 16px; }
+  nav { padding: 14px 20px; }
+  .nav-link { display: none; }
+  .hero { padding: 100px 24px 60px; }
+  .section { padding: 60px 24px; }
+  .cleanouts-inner { padding: 0 24px; }
+  .areas-section { padding: 60px 24px; }
+  .contact-section { padding: 60px 24px; }
+  .insurance-strip { gap: 32px; padding: 32px 24px; }
+  footer { padding: 24px 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-alts { flex-direction: column; align-items: center; gap: 16px; }
 }
 </style>
-
 </head>
 <body>
-
 <nav>
   <a class="nav-logo" href="#"><span>South Jersey</span> Repairs</a>
   <div class="nav-right">
@@ -186,7 +120,6 @@ footer { padding: 24px 20px; }
     <a class="nav-cta" href="#contact">Free Quote</a>
   </div>
 </nav>
-
 <section class="hero">
   <div class="hero-bg-text">REPAIRS</div>
   <div class="hero-accent"></div>
@@ -198,195 +131,57 @@ footer { padding: 24px 20px; }
     <a class="btn-outline" href="#repairs">See All Services</a>
   </div>
 </section>
-
 <div class="ticker">
   <div class="ticker-inner">
-    <span class="ticker-item">Plumbing</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">HVAC</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Electrical</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Carpentry</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Painting & Drywall</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Flooring</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Pressure Washing</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Garage Cleanouts</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Junk Removal</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Tenant Turnovers</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Plumbing</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">HVAC</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Electrical</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Carpentry</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Painting & Drywall</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Flooring</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Pressure Washing</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Garage Cleanouts</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Junk Removal</span><span class="ticker-item ticker-dot">✦</span>
-    <span class="ticker-item">Tenant Turnovers</span><span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">Plumbing</span><span class="ticker-item">✦</span><span class="ticker-item">HVAC</span><span class="ticker-item">✦</span><span class="ticker-item">Electrical</span><span class="ticker-item">✦</span><span class="ticker-item">Carpentry</span><span class="ticker-item">✦</span><span class="ticker-item">Painting & Drywall</span><span class="ticker-item">✦</span><span class="ticker-item">Flooring</span><span class="ticker-item">✦</span><span class="ticker-item">Pressure Washing</span><span class="ticker-item">✦</span><span class="ticker-item">Garage Cleanouts</span><span class="ticker-item">✦</span><span class="ticker-item">Junk Removal</span><span class="ticker-item">✦</span><span class="ticker-item">Tenant Turnovers</span><span class="ticker-item">✦</span><span class="ticker-item">Plumbing</span><span class="ticker-item">✦</span><span class="ticker-item">HVAC</span><span class="ticker-item">✦</span><span class="ticker-item">Electrical</span><span class="ticker-item">✦</span><span class="ticker-item">Carpentry</span><span class="ticker-item">✦</span><span class="ticker-item">Painting & Drywall</span><span class="ticker-item">✦</span><span class="ticker-item">Flooring</span><span class="ticker-item">✦</span><span class="ticker-item">Pressure Washing</span><span class="ticker-item">✦</span><span class="ticker-item">Garage Cleanouts</span><span class="ticker-item">✦</span><span class="ticker-item">Junk Removal</span><span class="ticker-item">✦</span><span class="ticker-item">Tenant Turnovers</span>
   </div>
 </div>
-
 <section class="section" id="repairs">
   <div class="section-label">Home Repair Services</div>
   <div class="section-title">We Fix What's Broken</div>
   <div class="repairs-grid">
-    <div class="repair-card">
-      <span class="repair-icon">🔧</span>
-      <h3>Plumbing</h3>
-      <p>Leaky pipes, running toilets, faucet replacements and basic plumbing repairs handled fast.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">❄️</span>
-      <h3>HVAC</h3>
-      <p>Filter changes, basic maintenance and tune-ups to keep your system running right all year.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">⚡</span>
-      <h3>Electrical</h3>
-      <p>Outlets, fixtures, switches and basic electrical repairs done safely and correctly.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">🪚</span>
-      <h3>Carpentry</h3>
-      <p>Doors, trim, shelving, cabinets and general handyman work around the house.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">🎨</span>
-      <h3>Painting & Drywall</h3>
-      <p>Holes patched, walls painted, clean professional finish inside and out.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">🪵</span>
-      <h3>Flooring</h3>
-      <p>Installation and repairs — tile, laminate, hardwood and more.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">🫧</span>
-      <h3>Pressure Washing</h3>
-      <p>Driveways, decks, siding and walkways — we make it look brand new again.</p>
-    </div>
-    <div class="repair-card">
-      <span class="repair-icon">🔌</span>
-      <h3>Appliance Install</h3>
-      <p>New washer, dryer, dishwasher or fridge — we hook it up right the first time.</p>
-    </div>
+    <div class="repair-card"><span class="repair-icon">🔧</span><h3>Plumbing</h3><p>Leaky pipes, running toilets, faucet replacements and basic plumbing repairs handled fast.</p></div>
+    <div class="repair-card"><span class="repair-icon">❄️</span><h3>HVAC</h3><p>Filter changes, basic maintenance and tune-ups to keep your system running right all year.</p></div>
+    <div class="repair-card"><span class="repair-icon">⚡</span><h3>Electrical</h3><p>Outlets, fixtures, switches and basic electrical repairs done safely and correctly.</p></div>
+    <div class="repair-card"><span class="repair-icon">🪚</span><h3>Carpentry</h3><p>Doors, trim, shelving, cabinets and general handyman work around the house.</p></div>
+    <div class="repair-card"><span class="repair-icon">🎨</span><h3>Painting & Drywall</h3><p>Holes patched, walls painted, clean professional finish inside and out.</p></div>
+    <div class="repair-card"><span class="repair-icon">🪵</span><h3>Flooring</h3><p>Installation and repairs — tile, laminate, hardwood and more.</p></div>
+    <div class="repair-card"><span class="repair-icon">🫧</span><h3>Pressure Washing</h3><p>Driveways, decks, siding and walkways — we make it look brand new again.</p></div>
+    <div class="repair-card"><span class="repair-icon">🔌</span><h3>Appliance Install</h3><p>New washer, dryer, dishwasher or fridge — we hook it up right the first time.</p></div>
   </div>
 </section>
-
 <div class="insurance-strip">
-  <div class="ins-item">
-    <span class="ins-icon">🛡️</span>
-    <h4>Fully Insured</h4>
-    <p>Every job covered</p>
-  </div>
-  <div class="ins-item">
-    <span class="ins-icon">🚛</span>
-    <h4>Own Truck & Trailer</h4>
-    <p>No rentals, no delays</p>
-  </div>
-  <div class="ins-item">
-    <span class="ins-icon">📍</span>
-    <h4>Local & Reliable</h4>
-    <p>Burlington & Camden County</p>
-  </div>
-  <div class="ins-item">
-    <span class="ins-icon">💬</span>
-    <h4>Free Quotes</h4>
-    <p>No pressure, no obligation</p>
-  </div>
+  <div class="ins-item"><span class="ins-icon">🛡️</span><h4>Fully Insured</h4><p>Every job covered</p></div>
+  <div class="ins-item"><span class="ins-icon">🚛</span><h4>Own Truck & Trailer</h4><p>No rentals, no delays</p></div>
+  <div class="ins-item"><span class="ins-icon">📍</span><h4>Local & Reliable</h4><p>Burlington & Camden County</p></div>
+  <div class="ins-item"><span class="ins-icon">💬</span><h4>Free Quotes</h4><p>No pressure, no obligation</p></div>
 </div>
-
 <div class="cleanouts-bg" id="cleanouts">
   <div class="cleanouts-inner">
     <div class="section-label">Cleanout Services</div>
     <div class="section-title">We Haul It All Away</div>
     <div class="cleanout-services">
-      <div class="cleanout-item">
-        <span class="cleanout-check">✦</span>
-        <div>
-          <h4>Garage Cleanouts</h4>
-          <p>Top to bottom, we load and haul everything you don't want.</p>
-        </div>
-      </div>
-      <div class="cleanout-item">
-        <span class="cleanout-check">✦</span>
-        <div>
-          <h4>Junk & Furniture Removal</h4>
-          <p>Couches, appliances, mattresses — gone in one trip.</p>
-        </div>
-      </div>
-      <div class="cleanout-item">
-        <span class="cleanout-check">✦</span>
-        <div>
-          <h4>Tenant Turnovers</h4>
-          <p>Landlords — unit cleared fast so you stop losing rent.</p>
-        </div>
-      </div>
-      <div class="cleanout-item">
-        <span class="cleanout-check">✦</span>
-        <div>
-          <h4>Estate Cleanouts</h4>
-          <p>Inherited a property full of stuff? Handled with care.</p>
-        </div>
-      </div>
-      <div class="cleanout-item">
-        <span class="cleanout-check">✦</span>
-        <div>
-          <h4>Hauling & Dump Runs</h4>
-          <p>Got a pile that needs to disappear? One trip, it's gone.</p>
-        </div>
-      </div>
-      <div class="cleanout-item">
-        <span class="cleanout-check">✦</span>
-        <div>
-          <h4>Property Cleanouts</h4>
-          <p>Rentals, storage units, full property clear-outs.</p>
-        </div>
-      </div>
+      <div class="cleanout-item"><span class="cleanout-check">✦</span><div><h4>Garage Cleanouts</h4><p>Top to bottom, we load and haul everything you don't want.</p></div></div>
+      <div class="cleanout-item"><span class="cleanout-check">✦</span><div><h4>Junk & Furniture Removal</h4><p>Couches, appliances, mattresses — gone in one trip.</p></div></div>
+      <div class="cleanout-item"><span class="cleanout-check">✦</span><div><h4>Tenant Turnovers</h4><p>Landlords — unit cleared fast so you stop losing rent.</p></div></div>
+      <div class="cleanout-item"><span class="cleanout-check">✦</span><div><h4>Estate Cleanouts</h4><p>Inherited a property full of stuff? Handled with care.</p></div></div>
+      <div class="cleanout-item"><span class="cleanout-check">✦</span><div><h4>Hauling & Dump Runs</h4><p>Got a pile that needs to disappear? One trip, it's gone.</p></div></div>
+      <div class="cleanout-item"><span class="cleanout-check">✦</span><div><h4>Property Cleanouts</h4><p>Rentals, storage units, full property clear-outs.</p></div></div>
     </div>
     <div class="pricing-row">
-      <div class="price-card">
-        <span class="price-medal">🥉</span>
-        <div class="price-name">Small Load</div>
-        <div class="price-amount">$199</div>
-        <div class="price-desc">Half a trailer or less. Perfect for a few big items or a corner cleanout.</div>
-      </div>
-      <div class="price-card featured">
-        <span class="price-medal">🥈</span>
-        <div class="price-name">Standard Cleanout</div>
-        <div class="price-amount">$399</div>
-        <div class="price-desc">Full trailer load. Most garages and junk jobs fall right here.</div>
-      </div>
-      <div class="price-card">
-        <span class="price-medal">🥇</span>
-        <div class="price-name">Full Premium</div>
-        <div class="price-amount">$699</div>
-        <div class="price-desc">Truck AND full trailer. The whole garage top to bottom, done in one shot.</div>
-      </div>
+      <div class="price-card"><span class="price-medal">🥉</span><div class="price-name">Small Load</div><div class="price-amount">$199</div><div class="price-desc">Half a trailer or less. Perfect for a few big items or a corner cleanout.</div></div>
+      <div class="price-card featured"><span class="price-medal">🥈</span><div class="price-name">Standard Cleanout</div><div class="price-amount">$399</div><div class="price-desc">Full trailer load. Most garages and junk jobs fall right here.</div></div>
+      <div class="price-card"><span class="price-medal">🥇</span><div class="price-name">Full Premium</div><div class="price-amount">$699</div><div class="price-desc">Truck AND full trailer. The whole garage top to bottom, done in one shot.</div></div>
     </div>
   </div>
 </div>
-
 <section class="areas-section">
   <div class="section-label">Service Area</div>
   <div class="section-title">Burlington & Camden County</div>
   <div class="areas-grid">
-    <div class="area-tag">Mount Holly</div>
-    <div class="area-tag">Moorestown</div>
-    <div class="area-tag">Mount Laurel</div>
-    <div class="area-tag">Marlton</div>
-    <div class="area-tag">Medford</div>
-    <div class="area-tag">Bordentown</div>
-    <div class="area-tag">Burlington City</div>
-    <div class="area-tag">Pemberton</div>
-    <div class="area-tag">Browns Mills</div>
-    <div class="area-tag">Cherry Hill</div>
-    <div class="area-tag">Voorhees</div>
-    <div class="area-tag">Haddonfield</div>
-    <div class="area-tag">Lindenwold</div>
-    <div class="area-tag">Gloucester Twp</div>
-    <div class="area-tag">& Surrounding Areas</div>
+    <div class="area-tag">Mount Holly</div><div class="area-tag">Moorestown</div><div class="area-tag">Mount Laurel</div><div class="area-tag">Marlton</div><div class="area-tag">Medford</div><div class="area-tag">Bordentown</div><div class="area-tag">Burlington City</div><div class="area-tag">Pemberton</div><div class="area-tag">Browns Mills</div><div class="area-tag">Cherry Hill</div><div class="area-tag">Voorhees</div><div class="area-tag">Haddonfield</div><div class="area-tag">Lindenwold</div><div class="area-tag">Gloucester Twp</div><div class="area-tag">& Surrounding Areas</div>
   </div>
 </section>
-
 <section class="contact-section" id="contact">
   <div class="contact-inner">
     <div class="section-label">Get In Touch</div>
@@ -401,25 +196,14 @@ footer { padding: 24px 20px; }
       <select name="service">
         <option value="" disabled selected>What do you need?</option>
         <optgroup label="Home Repairs">
-          <option>Plumbing</option>
-          <option>HVAC Maintenance</option>
-          <option>Electrical</option>
-          <option>Carpentry / Handyman</option>
-          <option>Painting & Drywall</option>
-          <option>Flooring</option>
-          <option>Pressure Washing</option>
-          <option>Appliance Installation</option>
+          <option>Plumbing</option><option>HVAC Maintenance</option><option>Electrical</option><option>Carpentry / Handyman</option><option>Painting & Drywall</option><option>Flooring</option><option>Pressure Washing</option><option>Appliance Installation</option>
         </optgroup>
         <optgroup label="Cleanout Services">
-          <option>Garage Cleanout</option>
-          <option>Junk & Furniture Removal</option>
-          <option>Tenant Turnover</option>
-          <option>Estate / Property Cleanout</option>
-          <option>Hauling & Dump Run</option>
+          <option>Garage Cleanout</option><option>Junk & Furniture Removal</option><option>Tenant Turnover</option><option>Estate / Property Cleanout</option><option>Hauling & Dump Run</option>
         </optgroup>
         <option>Something Else</option>
       </select>
-      <textarea name="message" placeholder="Describe what you need — the more detail the better so we can give you an accurate quote…"></textarea>
+      <textarea name="message" placeholder="Describe what you need…"></textarea>
       <button type="submit" class="submit-btn">Send My Free Quote Request →</button>
     </form>
     <div class="contact-alts">
@@ -431,12 +215,10 @@ footer { padding: 24px 20px; }
     </div>
   </div>
 </section>
-
 <footer>
   <p>© 2025 <span>South Jersey Repairs</span> · Home Repairs & Cleanouts · Burlington & Camden County, NJ · Fully Insured</p>
   <p style="margin-top:6px; color:#222;">southjersey.repairs</p>
 </footer>
-
 <script>
   function handleSubmit(e) {
     e.preventDefault();
@@ -447,6 +229,5 @@ footer { padding: 24px 20px; }
     btn.disabled = true;
   }
 </script>
-
 </body>
 </html>
