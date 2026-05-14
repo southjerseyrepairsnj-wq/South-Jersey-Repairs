@@ -58,44 +58,49 @@ z-index:999;
 }
 
 .header-inner{
-max-width:1400px;
+max-width:100%;
 margin:auto;
-padding:10px 18px;
+padding:8px 20px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:18px;
 }
 
 .logo img{
-height:120px;
+height:175px;
 width:auto;
+display:block;
 }
 
 .nav{
 display:flex;
-gap:20px;
+gap:18px;
 align-items:center;
 font-size:13px;
 font-weight:900;
 text-transform:uppercase;
 }
 
+.nav a{
+font-weight:900;
+}
+
 .quote-btn{
 background:var(--red);
 color:#fff;
-padding:12px 18px;
-border-radius:5px;
+padding:14px 22px;
+border-radius:6px;
+font-size:14px;
 }
 
 .hero{
-background:#f7f7f7;
+background:#f5f5f5;
 padding:70px 20px;
 text-align:center;
 }
 
 .hero-inner{
-max-width:900px;
+max-width:950px;
 margin:auto;
 }
 
@@ -103,19 +108,20 @@ margin:auto;
 display:inline-block;
 background:#fff;
 border-left:5px solid var(--red);
-padding:8px 14px;
-font-size:12px;
+padding:10px 16px;
+font-size:13px;
 font-weight:900;
 text-transform:uppercase;
-margin-bottom:20px;
+margin-bottom:24px;
 border:1px solid #ddd;
 }
 
 .hero h1{
-font-size:72px;
-line-height:.9;
+font-size:82px;
+line-height:.92;
 text-transform:uppercase;
 margin-bottom:18px;
+font-weight:900;
 }
 
 .hero h1 span{
@@ -124,24 +130,24 @@ color:var(--red);
 }
 
 .hero p{
-font-size:20px;
-max-width:700px;
+font-size:22px;
+max-width:760px;
 margin:auto;
-margin-bottom:28px;
+margin-bottom:34px;
 }
 
 .hero-services{
 display:flex;
 justify-content:center;
-gap:10px;
+gap:12px;
 flex-wrap:wrap;
-margin-bottom:30px;
+margin-bottom:34px;
 }
 
 .hero-services div{
 background:#111;
 color:#fff;
-padding:10px 14px;
+padding:12px 18px;
 border-radius:999px;
 font-size:12px;
 font-weight:900;
@@ -151,17 +157,17 @@ text-transform:uppercase;
 .hero-buttons{
 display:flex;
 justify-content:center;
-gap:14px;
+gap:16px;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:15px 22px;
-border-radius:5px;
+padding:16px 24px;
+border-radius:6px;
 font-weight:900;
 text-transform:uppercase;
 display:inline-block;
-min-width:190px;
+min-width:220px;
 text-align:center;
 }
 
@@ -175,43 +181,44 @@ border:2px solid var(--red);
 }
 
 .section{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
-padding:60px 18px;
+padding:70px 20px;
 }
 
 .section-title{
 text-align:center;
-margin-bottom:35px;
+margin-bottom:40px;
 }
 
 .section-title h2{
-font-size:40px;
+font-size:44px;
 text-transform:uppercase;
-margin-bottom:8px;
+margin-bottom:10px;
 }
 
 .section-title p{
 color:#666;
+font-size:18px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:18px;
+gap:22px;
 }
 
 .card{
 background:#fff;
-border:1px solid #e5e5e5;
-border-radius:10px;
-padding:25px 20px;
-box-shadow:0 6px 18px rgba(0,0,0,.05);
+border:1px solid #e6e6e6;
+border-radius:12px;
+padding:28px 22px;
+box-shadow:0 8px 22px rgba(0,0,0,.05);
 }
 
 .card h3{
-margin:14px 0 8px;
-font-size:20px;
+margin:16px 0 10px;
+font-size:22px;
 text-transform:uppercase;
 }
 
@@ -221,7 +228,7 @@ font-size:15px;
 }
 
 .icon{
-font-size:36px;
+font-size:40px;
 }
 
 .projects{
@@ -232,12 +239,12 @@ background:#fafafa;
 display:inline-block;
 background:var(--red);
 color:#fff;
-padding:5px 9px;
+padding:6px 10px;
 font-size:11px;
 font-weight:900;
-border-radius:4px;
+border-radius:5px;
 text-transform:uppercase;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
 .junk{
@@ -246,24 +253,25 @@ color:#fff;
 }
 
 .junk-inner{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
-padding:60px 18px;
+padding:70px 20px;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:30px;
+gap:40px;
+align-items:center;
 }
 
 .junk h2{
-font-size:42px;
+font-size:48px;
 text-transform:uppercase;
-margin-bottom:14px;
+margin-bottom:18px;
 }
 
 .junk-list{
-margin-top:20px;
+margin-top:22px;
 display:grid;
-gap:10px;
+gap:12px;
 font-weight:900;
 }
 
@@ -275,99 +283,99 @@ gap:14px;
 
 .price{
 border:2px solid var(--red);
-padding:22px 14px;
-border-radius:8px;
+padding:24px 16px;
+border-radius:10px;
 text-align:center;
 }
 
 .price h3{
 text-transform:uppercase;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
 .price .amount{
-font-size:46px;
+font-size:48px;
 font-weight:900;
 color:var(--red);
 }
 
 .contact{
-padding:60px 18px;
+padding:70px 20px;
 }
 
 .contact-inner{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:30px;
+gap:36px;
 }
 
 .contact h2{
-font-size:42px;
+font-size:44px;
 text-transform:uppercase;
-margin-bottom:12px;
+margin-bottom:16px;
 }
 
 .socials{
 display:flex;
 gap:12px;
-margin-top:18px;
+margin-top:20px;
 flex-wrap:wrap;
 }
 
 .socials a{
 background:#111;
 color:#fff;
-padding:11px 14px;
-border-radius:5px;
+padding:12px 16px;
+border-radius:6px;
 font-weight:900;
 }
 
 .form{
 border:2px solid var(--red);
-padding:22px;
-border-radius:10px;
+padding:24px;
+border-radius:12px;
 display:grid;
-gap:12px;
+gap:14px;
 }
 
 input,
 select,
 textarea{
 width:100%;
-padding:14px;
+padding:15px;
 border:1px solid #ccc;
-border-radius:4px;
+border-radius:6px;
 font-size:16px;
 }
 
 textarea{
-min-height:110px;
+min-height:120px;
 }
 
 .submit{
 background:var(--red);
 color:#fff;
 border:none;
-padding:15px;
+padding:16px;
 font-size:16px;
 font-weight:900;
-border-radius:5px;
+border-radius:6px;
 text-transform:uppercase;
 }
 
 .footer{
 background:#070707;
 color:#ccc;
-padding:30px 18px;
+padding:34px 20px;
 text-align:center;
 }
 
 .footer strong{
 display:block;
 color:#fff;
-margin-bottom:6px;
+margin-bottom:8px;
 text-transform:uppercase;
 }
 
@@ -377,24 +385,33 @@ display:none;
 
 @media(max-width:850px){
 
+.header-inner{
+padding:8px 14px;
+}
+
 .logo img{
-height:82px;
+height:125px;
 }
 
 .nav a:not(.quote-btn){
 display:none;
 }
 
+.quote-btn{
+padding:12px 16px;
+font-size:13px;
+}
+
 .hero{
-padding:40px 18px;
+padding:50px 18px;
 }
 
 .hero h1{
-font-size:46px;
+font-size:58px;
 }
 
 .hero p{
-font-size:16px;
+font-size:18px;
 }
 
 .hero-buttons{
@@ -414,7 +431,7 @@ grid-template-columns:1fr;
 
 .section,
 .contact{
-padding:48px 18px;
+padding:50px 18px;
 }
 
 .mobile-bar{
@@ -430,7 +447,7 @@ z-index:9999;
 .mobile-bar a{
 flex:1;
 text-align:center;
-padding:14px 8px;
+padding:15px 8px;
 color:#fff;
 font-weight:900;
 text-transform:uppercase;
@@ -438,7 +455,7 @@ border-right:1px solid rgba(255,255,255,.2);
 }
 
 body{
-padding-bottom:52px;
+padding-bottom:56px;
 }
 
 }
@@ -611,96 +628,4 @@ Garage cleanouts, appliances, furniture, trash piles, tenant turnovers and more.
 </div>
 
 <div class="price">
-<h3>Standard</h3>
-<div class="amount">$399</div>
-<p>Most junk removal jobs.</p>
-</div>
-
-<div class="price">
-<h3>Full Premium</h3>
-<div class="amount">$699</div>
-<p>Truck and full trailer.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-
-<div class="contact-inner">
-
-<div>
-
-<h2>Get A Free Quote</h2>
-
-<p>
-Call, text or submit the form for a fast response.
-</p>
-
-<p><strong>Phone:</strong> (609) 755-5463</p>
-<p><strong>Email:</strong> southjerseyrepairsnj@gmail.com</p>
-
-<div class="socials">
-<a href="https://www.facebook.com/share/1DbkrDGcV3/?mibextid=wwXIfr" target="_blank">Facebook</a>
-<a href="https://instagram.com/southjersey.repairs" target="_blank">Instagram</a>
-</div>
-
-</div>
-
-<form class="form" action="https://formspree.io/f/mojrqdaa" method="POST">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="tel" name="phone" placeholder="Phone Number" required>
-
-<input type="email" name="email" placeholder="Email Address">
-
-<select name="service">
-
-<option value="">What do you need?</option>
-
-<option>TV Mounting</option>
-<option>Home Repair</option>
-<option>Junk Removal</option>
-<option>Garage Cleanout</option>
-<option>Pressure Washing</option>
-<option>Property Maintenance</option>
-
-</select>
-
-<textarea name="message" placeholder="Tell us about the job..."></textarea>
-
-<button type="submit" class="submit">
-Send Request
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<footer class="footer">
-
-<strong>South Jersey Repairs</strong>
-
-<p>
-TV Mounting • Home Repairs • Junk Removal • Property Maintenance
-</p>
-
-<p>
-© 2026 South Jersey Repairs
-</p>
-
-</footer>
-
-<div class="mobile-bar">
-<a href="tel:+16097555463">Call</a>
-<a href="sms:+16097555463">Text</a>
-</div>
-
-</body>
-</html>
+<h3>Standard</h3
