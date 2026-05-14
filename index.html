@@ -1,259 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>South Jersey Repairs | Home Repairs & Junk Removal</title>
+
+<meta name="description" content="South Jersey Repairs provides home repairs, TV mounting, junk removal, cleanouts and property maintenance across South Jersey." />
+
 <meta property="og:title" content="South Jersey Repairs" />
 <meta property="og:description" content="Home Repairs, TV Mounting & Junk Removal in South Jersey." />
 <meta property="og:image" content="https://southjerseyrepairs.com/Logo.PNG" />
 <meta property="og:url" content="https://southjerseyrepairs.com" />
 <meta property="og:type" content="website" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>South Jersey Repairs | Home Repairs, TV Mounting & Junk Removal</title>
-<meta name="description" content="South Jersey Repairs provides TV mounting, home repairs, junk removal, cleanouts, tenant turnovers and property maintenance across Burlington and Camden County NJ. Call or text (609) 755-5463 for a free quote.">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111;line-height:1.5}
-a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-:root{--red:#d71920;--dark:#111;--gray:#f6f6f6;--muted:#666}
 
-.header{background:#fff;border-bottom:1px solid #e6e6e6;position:sticky;top:0;z-index:999}
-.header-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo img{height:95px;width:auto}
-.nav{display:flex;gap:20px;align-items:center;font-size:13px;font-weight:900;text-transform:uppercase}
-.nav a:hover{color:var(--red)}
-.nav .quote{background:var(--red);color:#fff;padding:12px 16px;border-radius:5px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-.hero{background:linear-gradient(135deg,#fff 0%,#fff 55%,#f1f1f1 55%,#f1f1f1 100%);border-bottom:1px solid #eee}
-.hero-inner{max-width:1120px;margin:auto;padding:54px 18px 62px;text-align:center}
-.badge{display:inline-block;background:#fff;border:1px solid #ddd;border-left:5px solid var(--red);padding:9px 13px;margin-bottom:18px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.8px}
-.hero h1{font-size:70px;line-height:.9;text-transform:uppercase;letter-spacing:-1px;margin-bottom:18px}
-.hero h1 span{display:block;color:var(--red)}
-.hero p{font-size:20px;max-width:720px;margin:0 auto 24px;color:#222;font-weight:600}
-.hero-services{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:26px auto 30px;max-width:850px}
-.pill{background:#111;color:#fff;border-radius:999px;padding:10px 15px;font-weight:900;font-size:13px;text-transform:uppercase}
-.pill.red{background:var(--red)}
-.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-width:190px;padding:15px 22px;border-radius:5px;font-weight:900;text-transform:uppercase}
-.btn-red{background:var(--red);color:#fff}
-.btn-outline{border:2px solid var(--red);background:#fff;color:#111}
+html{
+scroll-behavior:smooth;
+}
 
-.section{max-width:1120px;margin:auto;padding:60px 18px}
-.section-title{text-align:center;margin-bottom:32px}
-.kicker{color:var(--red);font-weight:900;text-transform:uppercase;font-size:13px;letter-spacing:1.3px;margin-bottom:8px}
-.section-title h2{font-size:40px;line-height:1;text-transform:uppercase}
-.section-title p{color:var(--muted);margin-top:8px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:#fff;border:1px solid #e5e5e5;border-radius:10px;padding:25px 20px;box-shadow:0 8px 20px rgba(0,0,0,.04)}
-.icon{font-size:34px;margin-bottom:12px}
-.card h3{text-transform:uppercase;margin-bottom:8px;font-size:18px}
-.card p{color:#444;font-size:15px}
+body{
+font-family:Arial,sans-serif;
+background:#fff;
+color:#111;
+line-height:1.5;
+}
 
-.projects{background:#fafafa}
-.project{background:#fff;border-left:5px solid var(--red)}
-.tag{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:900;text-transform:uppercase;padding:5px 8px;border-radius:3px;margin-bottom:10px}
-.note{text-align:center;margin-top:26px;color:#666;font-style:italic}
+a{
+text-decoration:none;
+color:inherit;
+}
 
-.junk{background:#111;color:#fff}
-.junk-inner{max-width:1120px;margin:auto;padding:60px 18px;display:grid;grid-template-columns:1fr 1.15fr;gap:34px}
-.junk h2{font-size:42px;line-height:1;text-transform:uppercase;margin-bottom:14px}
-.junk p{color:#ddd}
-.checks{display:grid;gap:10px;margin-top:18px;font-weight:900}
-.checks div:before{content:"✓";color:var(--red);margin-right:9px}
-.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.price{border:2px solid var(--red);border-radius:8px;text-align:center;padding:24px 16px}
-.price strong{text-transform:uppercase;display:block}
-.amount{font-size:46px;color:var(--red);font-weight:900;line-height:1;margin:8px 0}
+img{
+max-width:100%;
+display:block;
+}
 
-.contact-grid{max-width:1120px;margin:auto;padding:60px 18px;display:grid;grid-template-columns:.9fr 1.1fr;gap:34px}
-.contact h2{font-size:40px;line-height:1;text-transform:uppercase;margin-bottom:12px}
-.contact p{color:#444;margin-bottom:13px}
-.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-.socials a{background:#111;color:#fff;padding:11px 14px;border-radius:5px;font-weight:900}
-.form{display:grid;gap:12px;border:2px solid var(--red);padding:22px;border-radius:10px}
-input,select,textarea{width:100%;padding:14px;border:1px solid #ccc;font-size:16px;border-radius:4px}
-textarea{min-height:110px}
-.submit{background:var(--red);color:#fff;border:0;padding:15px;border-radius:5px;font-weight:900;text-transform:uppercase;font-size:16px}
+:root{
+--red:#d71920;
+--dark:#111;
+--gray:#f6f6f6;
+}
 
-.footer{background:#070707;color:#ccc;text-align:center;padding:28px 18px}
-.footer strong{display:block;color:#fff;text-transform:uppercase;margin-bottom:4px}
-.mobile-bar{display:none}
+.header{
+background:#fff;
+border-bottom:1px solid #eee;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.header-inner{
+max-width:1100px;
+margin:auto;
+padding:10px 18px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:18px;
+}
+
+.logo img{
+height:95px;
+width:auto;
+}
+
+.nav{
+display:flex;
+gap:20px;
+align-items:center;
+font-size:13px;
+font-weight:900;
+text-transform:uppercase;
+}
+
+.quote-btn{
+background:var(--red);
+color:#fff;
+padding:12px 18px;
+border-radius:5px;
+}
+
+.hero{
+background:#f7f7f7;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero-inner{
+max-width:900px;
+margin:auto;
+}
+
+.badge{
+display:inline-block;
+background:#fff;
+border-left:5px solid var(--red);
+padding:8px 14px;
+font-size:12px;
+font-weight:900;
+text-transform:uppercase;
+margin-bottom:20px;
+border:1px solid #ddd;
+}
+
+.hero h1{
+font-size:72px;
+line-height:.9;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.hero h1 span{
+display:block;
+color:var(--red);
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:28px;
+}
+
+.hero-services{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.hero-services div{
+background:#111;
+color:#fff;
+padding:10px 14px;
+border-radius:999px;
+font-size:12px;
+font-weight:900;
+text-transform:uppercase;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 22px;
+border-radius:5px;
+font-weight:900;
+text-transform:uppercase;
+display:inline-block;
+min-width:190px;
+text-align:center;
+}
+
+.btn-red{
+background:var(--red);
+color:#fff;
+}
+
+.btn-outline{
+border:2px solid var(--red);
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:60px 18px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:40px;
+text-transform:uppercase;
+margin-bottom:8px;
+}
+
+.section-title p{
+color:#666;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.card{
+background:#fff;
+border:1px solid #e5e5e5;
+border-radius:10px;
+padding:25px 20px;
+box-shadow:0 6px 18px rgba(0,0,0,.05);
+}
+
+.card h3{
+margin:14px 0 8px;
+font-size:20px;
+text-transform:uppercase;
+}
+
+.card p{
+color:#444;
+font-size:15px;
+}
+
+.icon{
+font-size:36px;
+}
+
+.projects{
+background:#fafafa;
+}
+
+.project-tag{
+display:inline-block;
+background:var(--red);
+color:#fff;
+padding:5px 9px;
+font-size:11px;
+font-weight:900;
+border-radius:4px;
+text-transform:uppercase;
+margin-bottom:10px;
+}
+
+.junk{
+background:#111;
+color:#fff;
+}
+
+.junk-inner{
+max-width:1100px;
+margin:auto;
+padding:60px 18px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.junk h2{
+font-size:42px;
+text-transform:uppercase;
+margin-bottom:14px;
+}
+
+.junk-list{
+margin-top:20px;
+display:grid;
+gap:10px;
+font-weight:900;
+}
+
+.prices{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+}
+
+.price{
+border:2px solid var(--red);
+padding:22px 14px;
+border-radius:8px;
+text-align:center;
+}
+
+.price h3{
+text-transform:uppercase;
+margin-bottom:10px;
+}
+
+.price .amount{
+font-size:46px;
+font-weight:900;
+color:var(--red);
+}
+
+.contact{
+padding:60px 18px;
+}
+
+.contact-inner{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.contact h2{
+font-size:42px;
+text-transform:uppercase;
+margin-bottom:12px;
+}
+
+.socials{
+display:flex;
+gap:12px;
+margin-top:18px;
+flex-wrap:wrap;
+}
+
+.socials a{
+background:#111;
+color:#fff;
+padding:11px 14px;
+border-radius:5px;
+font-weight:900;
+}
+
+.form{
+border:2px solid var(--red);
+padding:22px;
+border-radius:10px;
+display:grid;
+gap:12px;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:4px;
+font-size:16px;
+}
+
+textarea{
+min-height:110px;
+}
+
+.submit{
+background:var(--red);
+color:#fff;
+border:none;
+padding:15px;
+font-size:16px;
+font-weight:900;
+border-radius:5px;
+text-transform:uppercase;
+}
+
+.footer{
+background:#070707;
+color:#ccc;
+padding:30px 18px;
+text-align:center;
+}
+
+.footer strong{
+display:block;
+color:#fff;
+margin-bottom:6px;
+text-transform:uppercase;
+}
+
+.mobile-bar{
+display:none;
+}
 
 @media(max-width:850px){
-.header-inner{padding:8px 14px}
-.logo img{height:78px}
-.nav a:not(.quote){display:none}
-.nav .quote{font-size:12px;padding:11px 13px}
-.hero-inner{padding:34px 18px 42px}
-.hero h1{font-size:44px}
-.hero p{font-size:16px}
-.hero-services{gap:8px;margin:22px 0}
-.pill{font-size:11px;padding:8px 11px}
-.buttons{flex-direction:column}
-.btn{width:100%}
-.grid,.prices,.junk-inner,.contact-grid{grid-template-columns:1fr}
-.section,.junk-inner,.contact-grid{padding:46px 18px}
-.section-title h2,.junk h2,.contact h2{font-size:33px}
-.mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--red);z-index:9999}
-.mobile-bar a{flex:1;text-align:center;color:#fff;padding:14px 8px;font-weight:900;text-transform:uppercase;border-right:1px solid rgba(255,255,255,.25)}
-body{padding-bottom:52px}
+
+.logo img{
+height:72px;
 }
+
+.nav a:not(.quote-btn){
+display:none;
+}
+
+.hero{
+padding:40px 18px;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+}
+
+.grid,
+.prices,
+.junk-inner,
+.contact-inner{
+grid-template-columns:1fr;
+}
+
+.section,
+.contact{
+padding:48px 18px;
+}
+
+.mobile-bar{
+display:flex;
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:var(--red);
+z-index:9999;
+}
+
+.mobile-bar a{
+flex:1;
+text-align:center;
+padding:14px 8px;
+color:#fff;
+font-weight:900;
+text-transform:uppercase;
+border-right:1px solid rgba(255,255,255,.2);
+}
+
+body{
+padding-bottom:52px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header class="header">
-  <div class="header-inner">
-    <a href="#" class="logo">
-      <img src="Logo.PNG" alt="South Jersey Repairs Logo">
-    </a>
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#junk">Junk Removal</a>
-      <a href="#contact" class="quote">Free Quote</a>
-    </nav>
-  </div>
+
+<div class="header-inner">
+
+<a href="#" class="logo">
+<img src="Logo.PNG" alt="South Jersey Repairs Logo">
+</a>
+
+<nav class="nav">
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<a href="#contact" class="quote-btn">Free Quote</a>
+</nav>
+
+</div>
+
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <div class="badge">Fully Insured • Free Quotes • South Jersey</div>
-    <h1>We Fix It.<span>We Haul It.</span></h1>
-    <p>Home repairs, TV mounting, junk removal, cleanouts and property maintenance for homeowners, landlords and small businesses.</p>
 
-    <div class="hero-services">
-      <div class="pill red">TV Mounting</div>
-      <div class="pill">Home Repairs</div>
-      <div class="pill">Junk Removal</div>
-      <div class="pill">Cleanouts</div>
-      <div class="pill">Tenant Turnovers</div>
-      <div class="pill">Property Maintenance</div>
-    </div>
+<div class="hero-inner">
 
-    <div class="buttons">
-      <a class="btn btn-red" href="#contact">Get Free Quote</a>
-      <a class="btn btn-outline" href="tel:+16097555463">Call (609) 755-5463</a>
-    </div>
-  </div>
+<div class="badge">
+Fully Insured • South Jersey
+</div>
+
+<h1>
+We Fix It.
+<span>We Haul It.</span>
+</h1>
+
+<p>
+Home repairs, TV mounting, junk removal, cleanouts and property maintenance across South Jersey.
+</p>
+
+<div class="hero-services">
+<div>TV Mounting</div>
+<div>Home Repairs</div>
+<div>Junk Removal</div>
+<div>Tenant Turnovers</div>
+<div>Property Maintenance</div>
+</div>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn btn-red">Get Free Quote</a>
+<a href="tel:+16097555463" class="btn btn-outline">(609) 755-5463</a>
+</div>
+
+</div>
+
 </section>
 
 <section class="section" id="services">
-  <div class="section-title">
-    <div class="kicker">What We Do</div>
-    <h2>Services People Actually Need</h2>
-    <p>Small jobs welcome. Text photos for a fast quote.</p>
-  </div>
 
-  <div class="grid">
-    <div class="card"><div class="icon">📺</div><h3>TV Mounting</h3><p>Secure TV mounting, soundbars, shelves and clean setup.</p></div>
-    <div class="card"><div class="icon">🛠️</div><h3>Home Repairs</h3><p>Drywall, doors, trim, fixtures, small plumbing and general repairs.</p></div>
-    <div class="card"><div class="icon">🚛</div><h3>Junk Removal</h3><p>Garage junk, furniture, appliances, trash piles and dump runs.</p></div>
-    <div class="card"><div class="icon">🏠</div><h3>Property Maintenance</h3><p>Landlord punch lists, rental repairs and tenant turnovers.</p></div>
-    <div class="card"><div class="icon">🎨</div><h3>Interior Work</h3><p>Painting, wallpaper, trim, tile, flooring and finish work.</p></div>
-    <div class="card"><div class="icon">🫧</div><h3>Exterior Work</h3><p>Pressure washing, paver cleanup, decks, fencing and outdoor repairs.</p></div>
-  </div>
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Fast, reliable work for homeowners and landlords.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">📺</div>
+<h3>TV Mounting</h3>
+<p>Clean TV installs, shelves and mounting services.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛠️</div>
+<h3>Home Repairs</h3>
+<p>Drywall, doors, trim, fixtures and handyman work.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚛</div>
+<h3>Junk Removal</h3>
+<p>Garage cleanouts, furniture hauling and dump runs.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏠</div>
+<h3>Property Maintenance</h3>
+<p>Rental turnovers and landlord punch lists.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>Interior Work</h3>
+<p>Painting, flooring, wallpaper and tile work.</p>
+</div>
+
+<div class="card">
+<div class="icon">🫧</div>
+<h3>Exterior Work</h3>
+<p>Pressure washing, pavers, fencing and outdoor repairs.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="projects" id="projects">
-  <div class="section">
-    <div class="section-title">
-      <div class="kicker">Real Work</div>
-      <h2>Recent Projects</h2>
-      <p>Simple, honest project cards until you upload fresh photos.</p>
-    </div>
+<section class="projects section" id="projects">
 
-    <div class="grid">
-      <div class="card project"><span class="tag">Junk Removal</span><h3>Trash & Debris Haul Away</h3><p>Truck and trailer cleanouts for homeowners, landlords and properties.</p></div>
-      <div class="card project"><span class="tag">Bathroom Work</span><h3>Bathroom Remodel</h3><p>Bathroom repair, tile work, finish work and cleanup.</p></div>
-      <div class="card project"><span class="tag">TV Mounting</span><h3>Clean TV Installs</h3><p>Wall-mounted TVs with clean layout and secure install.</p></div>
-      <div class="card project"><span class="tag">Interior Work</span><h3>Tile, Flooring & Trim</h3><p>Flooring projects, wallpaper, wainscoting and finish work.</p></div>
-      <div class="card project"><span class="tag">Exterior Work</span><h3>Pavers & Pressure Washing</h3><p>Outdoor cleanup, walkway refresh and pressure washing jobs.</p></div>
-      <div class="card project"><span class="tag">Landlords</span><h3>Rental Punch Lists</h3><p>Turnover repairs, cleanouts and getting units rent-ready.</p></div>
-    </div>
+<div class="section-title">
+<h2>Recent Projects</h2>
+<p>Repairs, cleanouts and property work across South Jersey.</p>
+</div>
 
-    
-  </div>
+<div class="grid">
+
+<div class="card">
+<div class="project-tag">Junk Removal</div>
+<h3>Garage Cleanout</h3>
+<p>Trailer cleanouts and junk hauling services.</p>
+</div>
+
+<div class="card">
+<div class="project-tag">Bathroom Work</div>
+<h3>Bathroom Remodel</h3>
+<p>Tile work, repairs and bathroom improvements.</p>
+</div>
+
+<div class="card">
+<div class="project-tag">TV Mounting</div>
+<h3>TV Installation</h3>
+<p>Secure TV mounting and clean installs.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="junk" id="junk">
-  <div class="junk-inner">
-    <div>
-      <div class="badge">Junk Removal</div>
-      <h2>We Haul It All Away</h2>
-      <p>Garage cleanouts, furniture removal, appliances, tenant turnovers, property cleanouts and dump runs.</p>
-      <div class="checks">
-        <div>Garage cleanouts</div>
-        <div>Junk & furniture removal</div>
-        <div>Tenant turnovers</div>
-        <div>Hauling & dump runs</div>
-      </div>
-    </div>
+<section class="junk">
 
-    <div class="prices">
-      <div class="price"><strong>Small Load</strong><div class="amount">$199</div><p>Half trailer or less.</p></div>
-      <div class="price"><strong>Standard</strong><div class="amount">$399</div><p>Most garage and junk jobs.</p></div>
-      <div class="price"><strong>Full Premium</strong><div class="amount">$699</div><p>Truck and full trailer.</p></div>
-    </div>
-  </div>
+<div class="junk-inner">
+
+<div>
+
+<h2>We Haul It All Away</h2>
+
+<p>
+Garage cleanouts, appliances, furniture, trash piles, tenant turnovers and more.
+</p>
+
+<div class="junk-list">
+<div>Garage Cleanouts</div>
+<div>Furniture Removal</div>
+<div>Dump Runs</div>
+<div>Tenant Turnovers</div>
+</div>
+
+</div>
+
+<div class="prices">
+
+<div class="price">
+<h3>Small Load</h3>
+<div class="amount">$199</div>
+<p>Half trailer or less.</p>
+</div>
+
+<div class="price">
+<h3>Standard</h3>
+<div class="amount">$399</div>
+<p>Most junk removal jobs.</p>
+</div>
+
+<div class="price">
+<h3>Full Premium</h3>
+<div class="amount">$699</div>
+<p>Truck and full trailer.</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section class="contact" id="contact">
-  <div class="contact-grid">
-    <div>
-      <h2>Get A Free Quote</h2>
-      <p>Call, text or submit the form. For the fastest quote, text photos of the job.</p>
-      <p><strong>Phone:</strong> (609) 755-5463</p>
-      <p><strong>Email:</strong> southjerseyrepairsnj@gmail.com</p>
-      <p><strong>Serving:</strong> Cherry Hill, Mount Laurel, Marlton, Voorhees, Medford, Moorestown, Burlington, Mount Holly, Delran & surrounding South Jersey areas.</p>
 
-      <div class="socials">
-        <a href="https://www.facebook.com/share/1DbkrDGcV3/?mibextid=wwXIfr" target="_blank">Facebook</a>
-        <a href="https://instagram.com/southjersey.repairs" target="_blank">Instagram</a>
-      </div>
-    </div>
+<div class="contact-inner">
 
-    <form class="form" action="https://formspree.io/f/mojrqdaa" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="email" name="email" placeholder="Email Address">
-      <select name="service" required>
-        <option value="" disabled selected>What do you need?</option>
-        <option>TV Mounting</option>
-        <option>Home Repair</option>
-        <option>Junk Removal</option>
-        <option>Garage Cleanout</option>
-        <option>Tenant Turnover</option>
-        <option>Pressure Washing</option>
-        <option>Painting / Drywall</option>
-        <option>Tile / Flooring</option>
-        <option>Property Maintenance</option>
-        <option>Something Else</option>
-      </select>
-      <textarea name="message" placeholder="Tell us about the job..."></textarea>
-      <button class="submit" type="submit">Send Request</button>
-    </form>
-  </div>
+<div>
+
+<h2>Get A Free Quote</h2>
+
+<p>
+Call, text or submit the form for a fast response.
+</p>
+
+<p><strong>Phone:</strong> (609) 755-5463</p>
+<p><strong>Email:</strong> southjerseyrepairsnj@gmail.com</p>
+
+<div class="socials">
+<a href="https://www.facebook.com/share/1DbkrDGcV3/?mibextid=wwXIfr" target="_blank">Facebook</a>
+<a href="https://instagram.com/southjersey.repairs" target="_blank">Instagram</a>
+</div>
+
+</div>
+
+<form class="form" action="https://formspree.io/f/mojrqdaa" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="email" name="email" placeholder="Email Address">
+
+<select name="service">
+
+<option value="">What do you need?</option>
+
+<option>TV Mounting</option>
+<option>Home Repair</option>
+<option>Junk Removal</option>
+<option>Garage Cleanout</option>
+<option>Pressure Washing</option>
+<option>Property Maintenance</option>
+
+</select>
+
+<textarea name="message" placeholder="Tell us about the job..."></textarea>
+
+<button type="submit" class="submit">
+Send Request
+</button>
+
+</form>
+
+</div>
+
 </section>
 
 <footer class="footer">
-  <strong>South Jersey Repairs</strong>
-  <p>TV Mounting • Home Repairs • Junk Removal • Property Maintenance</p>
-  <p>© 2026 South Jersey Repairs</p>
+
+<strong>South Jersey Repairs</strong>
+
+<p>
+TV Mounting • Home Repairs • Junk Removal • Property Maintenance
+</p>
+
+<p>
+© 2026 South Jersey Repairs
+</p>
+
 </footer>
 
 <div class="mobile-bar">
-  <a href="tel:+16097555463">Call Now</a>
-  <a href="sms:+16097555463">Text Quote</a>
+<a href="tel:+16097555463">Call</a>
+<a href="sms:+16097555463">Text</a>
 </div>
 
 </body>
 </html>
-"""
-
-path = Path('/mnt/data/south-jersey-repairs-no-tv-image-index.html')
-path.write_text(html, encoding='utf-8')
-path.as_posix()
