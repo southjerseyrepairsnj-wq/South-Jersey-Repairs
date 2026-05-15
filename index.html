@@ -5,381 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>South Jersey Repairs | Handyman & Property Maintenance</title>
-<meta name="description" content="TV mounting, drywall repair, tenant turnovers, junk removal, pressure washing and handyman services across South Jersey.">
+<meta name="description" content="TV mounting, drywall repair, tenant turnovers, pressure washing and handyman services across South Jersey.">
+
+<meta property="og:title" content="South Jersey Repairs">
+<meta property="og:description" content="TV mounting, drywall repair, tenant turnovers, pressure washing and handyman services across South Jersey.">
+<meta property="og:image" content="https://southjerseyrepairs.com/logo-wide.PNG">
+<meta property="og:url" content="https://southjerseyrepairs.com">
+<meta property="og:type" content="website">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f5f5;
-color:#111;
-line-height:1.5;
-}
-
-a{text-decoration:none;color:inherit}
-
-.topbar{
-background:#000;
-color:#fff;
-padding:10px 16px;
-display:flex;
-justify-content:space-between;
-font-weight:700;
-font-size:14px;
-}
-
-.topbar a{color:#fff}
-
-.header{
-background:#fff;
-padding:14px 16px;
-border-bottom:1px solid #ddd;
-position:sticky;
-top:0;
-z-index:999;
-}
-
-.header-inner{
-display:grid;
-grid-template-columns:1fr auto auto;
-gap:12px;
-align-items:center;
-max-width:1200px;
-margin:auto;
-}
-
-.logo img{
-height:72px;
-width:auto;
-}
-
-.btn{
-padding:14px 18px;
-border-radius:12px;
-font-weight:800;
-text-transform:uppercase;
-display:inline-block;
-}
-
-.work-btn{
-border:3px solid #111;
-background:#fff;
-color:#111;
-}
-
-.quote-btn{
-background:#d71920;
-color:#fff;
-}
-
-.hero{
-padding:40px 20px 20px;
-text-align:center;
-background:#f5f5f5;
-}
-
-.hero h1{
-font-size:64px;
-line-height:.95;
-margin-bottom:18px;
-font-weight:900;
-}
-
-.hero p{
-max-width:900px;
-margin:auto;
-font-size:22px;
-font-weight:700;
-color:#333;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:14px;
-margin-top:28px;
-}
-
-.call-btn{
-background:#07182d;
-color:#fff;
-}
-
-.text-btn{
-background:#000;
-color:#fff;
-}
-
-.hero-photo{
-max-width:1100px;
-margin:28px auto 0;
-padding:0 16px 40px;
-}
-
-.hero-photo img{
-width:100%;
-height:auto;
-border-radius:22px;
-box-shadow:0 8px 24px rgba(0,0,0,.18);
-display:block;
-}
-
-.services{
-padding:50px 20px;
-background:#fff;
-text-align:center;
-}
-
-.section-heading{
-font-size:54px;
-font-weight:900;
-margin-bottom:20px;
-text-transform:uppercase;
-}
-
-.services-copy{
-max-width:850px;
-margin:18px auto 34px;
-font-size:18px;
-line-height:1.7;
-color:#444;
-font-weight:600;
-text-align:center;
-}
-
-.service-row{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:16px;
-max-width:1100px;
-margin:auto;
-}
-
-.service{
-font-weight:900;
-font-size:18px;
-text-transform:uppercase;
-}
-
-.service .icon{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.recent{
-padding:60px 20px;
-background:#f1f1f1;
-}
-
-.work-grid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:18px;
-max-width:1200px;
-margin:auto;
-}
-
-.card{
-background:#fff;
-border-radius:22px;
-overflow:hidden;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-}
-
-.card img{
-width:100%;
-height:260px;
-object-fit:cover;
-display:block;
-}
-
-.card h3{
-padding:16px;
-text-align:center;
-font-size:18px;
-font-weight:900;
-text-transform:uppercase;
-}
-
-.contact{
-padding:60px 20px;
-background:#fff;
-}
-
-.contact-inner{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-}
-
-.contact h2{
-font-size:44px;
-font-weight:900;
-margin-bottom:20px;
-text-transform:uppercase;
-}
-
-.contact p{
-margin-bottom:16px;
-font-size:17px;
-}
-
-.socials{
-display:flex;
-gap:12px;
-margin-top:22px;
-flex-wrap:wrap;
-}
-
-.socials a{
-padding:14px 18px;
-border-radius:10px;
-font-weight:800;
-text-transform:uppercase;
-}
-
-.fb{
-background:#111;
-color:#fff;
-}
-
-.ig{
-background:#d71920;
-color:#fff;
-}
-
-.form{
-display:grid;
-gap:14px;
-}
-
-input,textarea,select{
-padding:16px;
-border:1px solid #ccc;
-border-radius:10px;
-font-size:16px;
-width:100%;
-}
-
-textarea{
-min-height:130px;
-resize:vertical;
-}
-
-.submit{
-background:#d71920;
-color:#fff;
-border:none;
-padding:18px;
-border-radius:10px;
-font-weight:900;
-font-size:16px;
-text-transform:uppercase;
-}
-
-.footer{
-background:#111;
-color:#ddd;
-text-align:center;
-padding:40px 20px;
-}
-
-.footer h3{
-color:#fff;
-margin-bottom:10px;
-font-size:24px;
-}
-
-.mobile-bar{
-display:none;
-}
-
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;color:#111}
+.topbar{background:#000;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;font-weight:700}
+.topbar a{color:#fff;text-decoration:none}
+.header{background:#fff;padding:14px 16px;border-bottom:1px solid #ddd}
+.header-inner{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;max-width:1200px;margin:auto}
+.logo img{height:70px}
+.btn{padding:14px 18px;border-radius:12px;font-weight:800;text-decoration:none;text-transform:uppercase}
+.work-btn{border:3px solid #111;color:#111;background:#fff}
+.quote-btn{background:#d71920;color:#fff}
+.hero{text-align:center;padding:40px 20px 20px}
+.hero h1{font-size:60px;margin:0;font-weight:900}
+.hero p{font-size:22px;font-weight:700;max-width:900px;margin:18px auto;color:#333}
+.hero-buttons{display:flex;justify-content:center;gap:14px;margin-top:24px}
+.call-btn{background:#07182d;color:#fff}
+.text-btn{background:#000;color:#fff}
+.hero-photo{max-width:1100px;margin:28px auto;padding:0 16px 40px}
+.hero-photo img{width:100%;border-radius:22px;display:block}
+.services{padding:50px 20px;background:#fff;text-align:center}
+.section-heading{font-size:52px;font-weight:900;margin-bottom:20px}
+.services-copy{max-width:850px;margin:18px auto 34px;font-size:18px;line-height:1.7;color:#444;font-weight:600}
+.service-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:1100px;margin:auto}
+.service{font-weight:900;text-transform:uppercase}
+.service .icon{font-size:38px;margin-bottom:8px}
+.recent{padding:60px 20px;background:#f1f1f1}
+.work-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;max-width:1200px;margin:auto}
+.card{background:#fff;border-radius:22px;overflow:hidden}
+.card img{width:100%;height:240px;object-fit:cover}
+.card h3{text-align:center;padding:14px;font-size:15px}
+.contact{padding:60px 20px;background:#fff}
+.contact-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+form{display:grid;gap:14px}
+input,textarea,select{padding:16px;border:1px solid #ccc;border-radius:10px}
+.submit{background:#d71920;color:#fff;border:none;padding:18px;border-radius:10px;font-weight:900}
+.mobile-bar{display:none}
 @media(max-width:850px){
-
-.logo img{
-height:58px;
-}
-
-.btn{
-padding:12px 14px;
-font-size:14px;
-}
-
-.hero h1{
-font-size:58px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.hero-buttons{
-flex-direction:row;
-}
-
-.section-heading{
-font-size:42px;
-}
-
-.services-copy{
-font-size:16px;
-}
-
-.service-row{
-grid-template-columns:repeat(5,1fr);
-gap:8px;
-}
-
-.service{
-font-size:12px;
-}
-
-.service .icon{
-font-size:32px;
-}
-
-.work-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.card img{
-height:180px;
-}
-
-.card h3{
-font-size:14px;
-}
-
-.contact-inner{
-grid-template-columns:1fr;
-}
-
-.mobile-bar{
-display:flex;
-position:fixed;
-bottom:0;
-left:0;
-right:0;
-background:#d71920;
-z-index:9999;
-}
-
-.mobile-bar a{
-flex:1;
-text-align:center;
-padding:18px;
-font-weight:900;
-font-size:18px;
-color:#fff;
-text-transform:uppercase;
-border-right:1px solid rgba(255,255,255,.25);
-}
-
-body{
-padding-bottom:70px;
-}
+.logo img{height:58px}
+.hero h1{font-size:54px}
+.hero p{font-size:18px}
+.section-heading{font-size:42px}
+.service-row{grid-template-columns:repeat(5,1fr)}
+.service{font-size:12px}
+.work-grid{grid-template-columns:repeat(2,1fr)}
+.contact-inner{grid-template-columns:1fr}
+.mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#d71920}
+.mobile-bar a{flex:1;text-align:center;padding:18px;color:#fff;font-weight:900;text-decoration:none}
+body{padding-bottom:70px}
 }
 </style>
 </head>
@@ -388,7 +68,7 @@ padding-bottom:70px;
 
 <div class="topbar">
 <a href="tel:+16097555463">Call/Text (609) 755-5463</a>
-<a href="https://instagram.com/southjersey.repairs" target="_blank">Instagram</a>
+<a href="https://instagram.com/southjersey.repairs">Instagram</a>
 </div>
 
 <header class="header">
@@ -398,7 +78,7 @@ padding-bottom:70px;
 <img src="logo-wide.PNG" alt="South Jersey Repairs">
 </a>
 
-<a class="btn work-btn" href="https://instagram.com/southjersey.repairs" target="_blank">
+<a class="btn work-btn" href="https://instagram.com/southjersey.repairs">
 See Our Work
 </a>
 
@@ -441,32 +121,11 @@ and general handyman services across South Jersey.
 </p>
 
 <div class="service-row">
-
-<div class="service">
-<div class="icon">🛠️</div>
-Repairs
-</div>
-
-<div class="service">
-<div class="icon">🏠</div>
-Turnovers
-</div>
-
-<div class="service">
-<div class="icon">📺</div>
-TV Mounting
-</div>
-
-<div class="service">
-<div class="icon">🫧</div>
-Pressure Washing
-</div>
-
-<div class="service">
-<div class="icon">🚛</div>
-Cleanouts
-</div>
-
+<div class="service"><div class="icon">🛠️</div>Repairs</div>
+<div class="service"><div class="icon">🏠</div>Turnovers</div>
+<div class="service"><div class="icon">📺</div>TV Mounting</div>
+<div class="service"><div class="icon">🫧</div>Pressure Washing</div>
+<div class="service"><div class="icon">🚛</div>Cleanouts</div>
 </div>
 
 </section>
@@ -476,32 +135,11 @@ Cleanouts
 <h2 class="section-heading" style="text-align:center;">Recent Work</h2>
 
 <div class="work-grid">
-
-<div class="card">
-<img src="bathroom-remodel.PNG">
-<h3>Bathroom Remodel</h3>
-</div>
-
-<div class="card">
-<img src="drywall-repair.JPEG">
-<h3>Drywall Repair</h3>
-</div>
-
-<div class="card">
-<img src="pressure-washing.png">
-<h3>Pressure Washing</h3>
-</div>
-
-<div class="card">
-<img src="tv-mount.PNG">
-<h3>TV Mounting</h3>
-</div>
-
-<div class="card">
-<img src="junk-removal.PNG">
-<h3>Junk Removal</h3>
-</div>
-
+<div class="card"><img src="bathroom-remodel.PNG"><h3>Bathroom Remodel</h3></div>
+<div class="card"><img src="drywall-repair.JPEG"><h3>Drywall Repair</h3></div>
+<div class="card"><img src="pressure-washing.png"><h3>Pressure Washing</h3></div>
+<div class="card"><img src="tv-mount.PNG"><h3>TV Mounting</h3></div>
+<div class="card"><img src="junk-removal.PNG"><h3>Junk Removal</h3></div>
 </div>
 
 </section>
@@ -511,7 +149,6 @@ Cleanouts
 <div class="contact-inner">
 
 <div>
-
 <h2>Get A Free Quote</h2>
 
 <p>
@@ -523,19 +160,12 @@ Washington Township, Moorestown, Cinnaminson and Delran.
 
 <p><strong>Phone:</strong> (609) 755-5463</p>
 
-<div class="socials">
-<a class="fb" href="https://www.facebook.com/share/1DbkrDGcV3/?mibextid=wwXIfr" target="_blank">Facebook</a>
-<a class="ig" href="https://instagram.com/southjersey.repairs" target="_blank">Instagram</a>
 </div>
 
-</div>
-
-<form class="form" action="https://formspree.io/f/mojrqdaa" method="POST">
+<form action="https://formspree.io/f/mojrqdaa" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
-
 <input type="tel" name="phone" placeholder="Phone Number" required>
-
 <input type="email" name="email" placeholder="Email Address">
 
 <select name="service">
@@ -545,8 +175,6 @@ Washington Township, Moorestown, Cinnaminson and Delran.
 <option>Tenant Turnovers</option>
 <option>Pressure Washing</option>
 <option>Junk Removal</option>
-<option>Bathroom Updates</option>
-<option>Property Maintenance</option>
 </select>
 
 <textarea name="message" placeholder="Tell us about the job..."></textarea>
@@ -559,14 +187,9 @@ Washington Township, Moorestown, Cinnaminson and Delran.
 
 </section>
 
-<footer class="footer">
-<h3>South Jersey Repairs</h3>
-<p>TV Mounting • Drywall Repair • Tenant Turnovers • Pressure Washing • Property Maintenance</p>
-</footer>
-
 <div class="mobile-bar">
-<a href="tel:+16097555463">Call</a>
-<a href="sms:+16097555463">Text</a>
+<a href="tel:+16097555463">CALL</a>
+<a href="sms:+16097555463">TEXT</a>
 </div>
 
 </body>
