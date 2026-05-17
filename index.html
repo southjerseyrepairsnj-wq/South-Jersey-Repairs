@@ -230,97 +230,6 @@
   }
 }
 
-
-/* Final mobile polish */
-@media(max-width:560px){
-  body{
-    overflow-x:hidden;
-  }
-
-  section{
-    padding-left:12px;
-    padding-right:12px;
-  }
-
-  .hero-inner{
-    padding-left:12px;
-    padding-right:12px;
-  }
-
-  .hero-photo img,
-  .featured-fence-image img,
-  .card img{
-    width:100%;
-    max-width:100%;
-  }
-
-  .featured-fence-grid{
-    padding:14px;
-  }
-
-  .cards,
-  .service-link-grid,
-  .faq,
-  .towns,
-  .more-services{
-    gap:14px;
-  }
-
-  .card,
-  .service-link-card,
-  .panel,
-  .faq-item{
-    border-radius:14px;
-  }
-
-  .hero-actions .btn{
-    width:100%;
-    text-align:center;
-  }
-}
-
-
-.menu-toggle{
-  display:none;
-  background:#171717;
-  color:#fff;
-  border:1px solid #333;
-  border-radius:10px;
-  padding:10px 14px;
-  font-size:22px;
-  cursor:pointer;
-}
-
-.mobile-menu{
-  position:fixed;
-  top:78px;
-  left:0;
-  right:0;
-  background:#0f0f0f;
-  border-top:1px solid #333;
-  display:none;
-  flex-direction:column;
-  z-index:98;
-}
-
-.mobile-menu a{
-  color:#fff;
-  text-decoration:none;
-  padding:16px 18px;
-  border-bottom:1px solid #222;
-  font-weight:700;
-}
-
-body.menu-open .mobile-menu{
-  display:flex;
-}
-
-@media(max-width:900px){
-  .menu-toggle{
-    display:block;
-  }
-}
-
 </style>
 </head>
 <body>
@@ -333,7 +242,6 @@ body.menu-open .mobile-menu{
 <span>Home Repair & Property Maintenance</span>
 </span>
 </a>
-<button class="menu-toggle" aria-label="Open Menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
 <div class="navlinks">
 <a href="#services">Services</a>
 <a href="#service-pages">More Services</a>
@@ -344,24 +252,14 @@ body.menu-open .mobile-menu{
 </div>
 </nav>
 </div>
-
-<div class="mobile-menu">
-<a href="#services" onclick="document.body.classList.remove('menu-open')">Services</a>
-<a href="#service-pages" onclick="document.body.classList.remove('menu-open')">More Services</a>
-<a href="#areas" onclick="document.body.classList.remove('menu-open')">Areas</a>
-<a href="#reviews" onclick="document.body.classList.remove('menu-open')">Reviews</a>
-<a href="#faq" onclick="document.body.classList.remove('menu-open')">FAQ</a>
-<a href="#quote" onclick="document.body.classList.remove('menu-open')">Free Quote</a>
-</div>
-
 <main>
 <section class="hero">
 <div class="hero-inner">
 <div>
 <span class="eyebrow">Serving South Jersey, Philadelphia & Surrounding Areas</span>
 <h1>Home Repair & Property Maintenance Services</h1>
-<p>South Jersey Repairs helps homeowners, landlords, investors, and property managers with drywall repair, TV mounting, fence repairs, junk removal, pressure washing, handyman services, smart home setup, and property maintenance across South Jersey and nearby Philadelphia.</p>
-<p>From drywall repair and TV mounting to fence repairs, bathroom updates, junk removal, pressure washing, and rental maintenance, South Jersey Repairs helps keep homes and properties looking their best.</p>
+<p>South Jersey Repairs helps homeowners, landlords, investors, and property managers with reliable home repair, handyman services, drywall repair, TV mounting, fence repairs, smart home and security camera setup, junk removal, pressure washing, rental turnovers, and property maintenance services across South Jersey, Philadelphia, and surrounding areas.</p>
+<p>From drywall repair and TV mounting to fence repairs, smart home camera setup, junk removal, bathroom repairs, pressure washing, flooring installs, cabinet repairs, and rental maintenance, South Jersey Repairs helps keep homes and properties looking their best.</p>
 <p class="quick-quote-line">Call or text photos for faster quotes on repairs, installs, cleanouts, and property maintenance.</p>
 <div class="hero-actions">
 <a class="btn btn-red" href="tel:7325565590" onclick="event.stopPropagation()">Call Now</a>
@@ -509,7 +407,7 @@ body.menu-open .mobile-menu{
 <div class="split">
 <div class="panel light">
 <h2>For Homeowners Who Need Things Fixed</h2>
-<p>Most homeowners do not want to chase different companies for every small repair. South Jersey Repairs helps handle the real repair list: TV mounting, drywall patches, cleanouts, pressure washing, bathroom repairs, and punch-list items.</p>
+<p>Most homeowners do not want to spend weeks chasing separate people for every small job. South Jersey Repairs is built for the real home repair list: mount the TV, patch the wall, clean out the garage, wash the house, fix the bathroom issue, handle the punch list, and get the property looking right.</p>
 <p>Whether you just moved in, are getting ready to sell, need a room finished, or finally want to knock out the repairs you have been putting off, we help with practical home repair and improvement work across South Jersey and the Philadelphia area.</p>
 </div>
 <div class="panel">
@@ -869,9 +767,11 @@ body.menu-open .mobile-menu{
 </div>
 <div class="split" style="margin-top:24px;">
 <div class="panel">
-<h2>Tell Us What You Need</h2>
-<form name="contact" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="contact" />
+<h2>Request a Quote</h2>
+<p id="thank-you-message" style="display:none;color:#ffffff;font-weight:700;">Thank you for your submission. We will contact you shortly.</p>
+<p id="thank-you-message" style="display:none;color:#ffffff;font-weight:700;">Thank you for your submission. We will contact you shortly.</p>
+<form name="contact" action="https://formspree.io/f/mojrqdaa" method="POST">
+<input type="hidden" name="_next" value="https://www.southjerseyrepairs.com/?submitted=true">
 <input type="text" name="name" placeholder="Your name" required />
 <input type="tel" name="phone" placeholder="Phone number" required />
 <input type="email" name="email" placeholder="Email address" />
@@ -880,17 +780,22 @@ body.menu-open .mobile-menu{
 <option value="">What service do you need?</option>
 <option>TV Mounting</option>
 <option>Drywall Repair or Installation</option>
+<option>Fence Repairs</option>
+<option>Handyman / Home Repair</option>
+<option>Smart Home / Security Cameras</option>
 <option>Junk Removal or Cleanout</option>
 <option>Pressure Washing or House Washing</option>
 <option>Bathroom Repair or Update</option>
-<option>Home Repair / Punch List</option>
+<option>Cabinet Repair</option>
+<option>Ceiling Fan Installation</option>
+<option>Deck Painting or Staining</option>
+<option>Garbage Disposal / Faucet / Toilet</option>
 <option>Property Maintenance</option>
-              <option>Fence Repairs</option>
-              <option>Smart Home / Security Cameras</option>
 <option>Other</option>
 </select>
-<textarea name="message" placeholder="Describe the job. Include photos by texting if easier."></textarea>
-<button type="submit">Send Request</button>
+<textarea name="message" placeholder="Describe the job, timing, and any photos or details that would help with the quote."></textarea>
+<button type="submit">Send Quote Request</button>
+<p class="muted" style="font-size:14px;margin:0;">Photos can also be texted to <a href="sms:7325565590"><strong>732-556-5590</strong></a>.</p>
 </form>
 </div>
 <div class="panel light">
