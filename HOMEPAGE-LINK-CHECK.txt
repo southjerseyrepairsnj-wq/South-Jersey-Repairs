@@ -1,0 +1,14 @@
+HOMEPAGE LINK CHECK
+fence-repair-south-jersey.html: OK
+drywall-repair-south-jersey.html: OK
+tv-mounting-burlington-county.html: OK
+smart-home-security-camera-installation.html: OK
+handyman-home-repairs-south-jersey.html: OK
+property-maintenance-rental-turnovers.html: OK
+junk-removal-south-jersey.html: OK
+pressure-washing-south-jersey.html: OK
+bathroom-repairs.html: OK
+cabinet-repair.html: OK
+
+IMPORTANT: Upload all files from this ZIP into the same GitHub root folder.
+Then test: /index.html, /fence-repair-south-jersey.html, /smart-home-security-camera-installation.html, /sitemap.xml, /robots.txt
