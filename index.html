@@ -321,6 +321,33 @@ body.menu-open .mobile-menu{
   }
 }
 
+
+.hero-actions-primary{
+  margin-bottom:0;
+}
+.hero-quote-action{
+  margin-top:12px;
+}
+.hero-quote-action .btn{
+  display:inline-block;
+  text-align:center;
+}
+@media(max-width:560px){
+  .hero-actions-primary{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .hero-actions-primary .btn{
+    width:100%;
+    text-align:center;
+  }
+  .hero-quote-action .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -363,10 +390,12 @@ body.menu-open .mobile-menu{
 <p>South Jersey Repairs helps homeowners, landlords, investors, and property managers with drywall repair, TV mounting, fence repairs, junk removal, pressure washing, handyman services, smart home setup, and property maintenance across South Jersey and nearby Philadelphia.</p>
 <p>From drywall repair and TV mounting to fence repairs, bathroom updates, junk removal, pressure washing, and rental maintenance, South Jersey Repairs helps keep homes and properties looking their best.</p>
 <p class="quick-quote-line">Call or text photos for faster quotes on repairs, installs, cleanouts, and property maintenance.</p>
-<div class="hero-actions">
-<a class="btn btn-red" href="tel:7325565590" onclick="event.stopPropagation()">Call Now</a>
+<div class="hero-actions hero-actions-primary">
+<a class="btn btn-red" href="tel:7325565590">Call Now</a>
 <a class="btn btn-dark" href="sms:7325565590">Text Us</a>
-<a class="btn btn-dark" href="#quote">Text Photos for a Faster Quote</a>
+</div>
+<div class="hero-quote-action">
+<a class="btn btn-dark" href="#quote">Request Quote</a>
 </div>
 <div class="trust-row">
 <div class="trust-item">Homeowners & families</div>
