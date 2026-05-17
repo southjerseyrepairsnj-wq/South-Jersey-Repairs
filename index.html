@@ -112,6 +112,59 @@
   transition:.18s ease;
 }
 
+
+.featured-fence-link{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+}
+.featured-fence-link:hover .featured-fence-grid{
+  border-color:var(--red);
+}
+.featured-fence-image img{
+  height:auto;
+  object-fit:contain;
+}
+.card img[src="fence-repair-before-after.png"]{
+  height:auto;
+  object-fit:contain;
+  background:#111;
+}
+
+
+.quick-quote-line{
+  color:#ffffff;
+  font-weight:700;
+  margin-top:10px;
+}
+.featured-fence-link{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+}
+.featured-fence-link:hover .featured-fence-grid{
+  border-color:var(--red);
+}
+.featured-fence-image img{
+  height:auto;
+  object-fit:contain;
+}
+.card-click{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+}
+.card-click:hover{
+  border-color:var(--red);
+  transform:translateY(-2px);
+  transition:.18s ease;
+}
+.card img[src="fence-repair-before-after.png"]{
+  height:auto;
+  object-fit:contain;
+  background:#111;
+}
+
 </style>
 </head>
 <body>
@@ -142,6 +195,7 @@
 <h1>Home Repair & Property Maintenance Services</h1>
 <p>South Jersey Repairs helps homeowners, landlords, investors, and property managers with reliable home repair, handyman services, drywall repair, TV mounting, fence repairs, smart home and security camera setup, junk removal, pressure washing, rental turnovers, and property maintenance services across South Jersey, Philadelphia, and surrounding areas.</p>
 <p>From drywall repair and TV mounting to fence repairs, smart home camera setup, junk removal, bathroom repairs, pressure washing, flooring installs, cabinet repairs, and rental maintenance, South Jersey Repairs helps keep homes and properties looking their best.</p>
+<p class="quick-quote-line">Call or text photos for faster quotes on repairs, installs, cleanouts, and property maintenance.</p>
 <div class="hero-actions">
 <a class="btn btn-red" href="tel:7325565590">Call Now</a>
 <a class="btn btn-dark" href="sms:7325565590">Text Us</a>
@@ -160,6 +214,7 @@
 </section>
 
     <section class="featured-fence" id="fence-repairs">
+      <a class="featured-fence-link" href="fence-repair-south-jersey.html" aria-label="View fence repair services">
       <div class="featured-fence-grid">
         <div class="featured-fence-image">
           <img src="fence-repair-before-after.png" alt="Fence repair before and after by South Jersey Repairs">
@@ -179,10 +234,11 @@
 
           <div class="hero-actions">
             <a class="btn btn-red" href="tel:7325565590">Call Now</a>
-            <a class="btn btn-dark" href="#quote">Free Quote</a>
+            <a class="btn btn-dark" href="fence-repair-south-jersey.html">View Fence Repairs</a>
           </div>
         </div>
       </div>
+      </a>
     </section>
 
     <section id="services">
@@ -192,17 +248,9 @@
 </div>
 <div class="cards">
 
-        <a class="card card-click" href="fence-repair-south-jersey.html">
-
-          <img src="fence-repair-before-after.png" alt="Fence repair and replacement in South Jersey">
-          <div class="card-body">
-            <h3>Fence Repairs</h3>
-            <p>Fence panel repairs, gate repairs, loose boards, leaning sections, minor storm damage repairs, and exterior property maintenance for homes and rental properties.</p>
-          </div>
         
-</a>
 
-        <a class="card card-click" href="tv-mounting-burlington-county.html">
+<a class="card card-click" href="tv-mounting-burlington-county.html">
 
 <img src="tv-mount.PNG" alt="TV mounting service in South Jersey and Burlington County">
 <div class="card-body">
@@ -220,12 +268,21 @@
 </div>
 
 </a>
-<a class="card card-click" href="junk-removal-south-jersey.html">
+<a class="card card-click" href="fence-repair-south-jersey.html">
 
-<img src="junk-removal.PNG" alt="Junk removal and property cleanouts in South Jersey">
+          <img src="fence-repair-before-after.png" alt="Fence repair and replacement in South Jersey">
+          <div class="card-body">
+            <h3>Fence Repairs</h3>
+            <p>Fence panel repairs, gate repairs, loose boards, leaning sections, minor storm damage repairs, and exterior property maintenance for homes and rental properties.</p>
+          </div>
+        
+</a>
+<a class="card card-click" href="handyman-home-repairs-south-jersey.html">
+
+<img src="hero-tile.PNG" alt="Home repair and property maintenance South Jersey">
 <div class="card-body">
-<h3>Junk Removal & Property Cleanouts</h3>
-<p>Junk hauling, garage cleanouts, move-out cleanups, rental property cleanouts, furniture removal, trash removal, and cleanup help for homes and properties.</p>
+<h3>Everyday Home Repairs & Installations</h3>
+<p>South Jersey Repairs helps homeowners, landlords, and property owners with drywall repair, drywall installation, ceiling fan installation, TV mounting, faucet replacement, toilet replacement, garbage disposal replacement, furniture assembly, cabinet repair, deck painting, deck staining, pressure washing, bathroom repairs, shelving installation, trim repair, move-in repairs, move-out repairs, and general property maintenance services across South Jersey, Philadelphia, and surrounding areas.</p>
 </div>
 
 </a>
@@ -238,6 +295,15 @@
 </div>
 
 </a>
+<a class="card card-click" href="junk-removal-south-jersey.html">
+
+<img src="junk-removal.PNG" alt="Junk removal and property cleanouts in South Jersey">
+<div class="card-body">
+<h3>Junk Removal & Property Cleanouts</h3>
+<p>Junk hauling, garage cleanouts, move-out cleanups, rental property cleanouts, furniture removal, trash removal, and cleanup help for homes and properties.</p>
+</div>
+
+</a>
 <a class="card card-click" href="bathroom-repairs.html">
 
 <img src="bathroom-remodel.PNG" alt="Bathroom repairs and updates in South Jersey">
@@ -247,15 +313,8 @@
 </div>
 
 </a>
-<a class="card card-click" href="handyman-home-repairs-south-jersey.html">
 
-<img src="hero-tile.PNG" alt="Home repair and property maintenance South Jersey">
-<div class="card-body">
-<h3>Everyday Home Repairs & Installations</h3>
-<p>South Jersey Repairs helps homeowners, landlords, and property owners with drywall repair, drywall installation, ceiling fan installation, TV mounting, faucet replacement, toilet replacement, garbage disposal replacement, furniture assembly, cabinet repair, deck painting, deck staining, pressure washing, bathroom repairs, shelving installation, trim repair, move-in repairs, move-out repairs, and general property maintenance services across South Jersey, Philadelphia, and surrounding areas.</p>
-</div>
 
-</a>
 </div>
 </section>
 
@@ -699,10 +758,11 @@
 <h3>Core Services</h3>
 <p>TV Mounting</p>
 <p>Drywall Repair & Installation</p>
-<p>Junk Removal & Property Cleanouts</p>
-<p>House Washing & Pressure Washing</p>
-<p>Handyman Services & Home Repairs</p>
 <p>Fence Repairs</p>
+<p>Handyman Services & Home Repairs</p>
+<p>House Washing & Pressure Washing</p>
+<p>Junk Removal & Property Cleanouts</p>
+<p>Property Maintenance</p>
 <p>Garbage Disposal, Toilet & Faucet Replacement</p>
 </div>
 <div>
