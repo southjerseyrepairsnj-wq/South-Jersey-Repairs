@@ -165,6 +165,120 @@
   background:#111;
 }
 
+
+.featured-fence-grid{
+  cursor:pointer;
+}
+.featured-fence-grid:focus{
+  outline:2px solid var(--red);
+  outline-offset:4px;
+}
+
+
+/* Cleaner featured fence layout */
+.featured-fence{
+  padding-top:38px;
+  padding-bottom:38px;
+}
+
+.featured-fence-grid{
+  grid-template-columns:1.15fr .85fr;
+  align-items:center;
+  gap:26px;
+  cursor:pointer;
+}
+
+.featured-fence-image{
+  background:#111;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid #333;
+}
+
+.featured-fence-image img{
+  width:100%;
+  height:auto !important;
+  object-fit:contain !important;
+  display:block;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  background:#111;
+}
+
+.featured-fence-content p{
+  margin-top:8px;
+  margin-bottom:12px;
+}
+
+@media(max-width:900px){
+  .featured-fence-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:18px;
+  }
+
+  .featured-fence{
+    padding-top:28px;
+    padding-bottom:28px;
+  }
+
+  .featured-fence-image img{
+    width:100%;
+    height:auto !important;
+    object-fit:contain !important;
+  }
+}
+
+
+/* Final mobile polish */
+@media(max-width:560px){
+  body{
+    overflow-x:hidden;
+  }
+
+  section{
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  .hero-inner{
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  .hero-photo img,
+  .featured-fence-image img,
+  .card img{
+    width:100%;
+    max-width:100%;
+  }
+
+  .featured-fence-grid{
+    padding:14px;
+  }
+
+  .cards,
+  .service-link-grid,
+  .faq,
+  .towns,
+  .more-services{
+    gap:14px;
+  }
+
+  .card,
+  .service-link-card,
+  .panel,
+  .faq-item{
+    border-radius:14px;
+  }
+
+  .hero-actions .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -197,7 +311,7 @@
 <p>From drywall repair and TV mounting to fence repairs, smart home camera setup, junk removal, bathroom repairs, pressure washing, flooring installs, cabinet repairs, and rental maintenance, South Jersey Repairs helps keep homes and properties looking their best.</p>
 <p class="quick-quote-line">Call or text photos for faster quotes on repairs, installs, cleanouts, and property maintenance.</p>
 <div class="hero-actions">
-<a class="btn btn-red" href="tel:7325565590">Call Now</a>
+<a class="btn btn-red" href="tel:7325565590" onclick="event.stopPropagation()">Call Now</a>
 <a class="btn btn-dark" href="sms:7325565590">Text Us</a>
 <a class="btn btn-dark" href="#quote">Text Photos for a Faster Quote</a>
 </div>
@@ -214,8 +328,7 @@
 </section>
 
     <section class="featured-fence" id="fence-repairs">
-      <a class="featured-fence-link" href="fence-repair-south-jersey.html" aria-label="View fence repair services">
-      <div class="featured-fence-grid">
+      <div class="featured-fence-grid" onclick="window.location.href='fence-repair-south-jersey.html'" onkeydown="if(event.key==='Enter'){window.location.href='fence-repair-south-jersey.html'}" role="link" tabindex="0" aria-label="View fence repair services">
         <div class="featured-fence-image">
           <img src="fence-repair-before-after.png" alt="Fence repair before and after by South Jersey Repairs">
         </div>
@@ -234,11 +347,10 @@
 
           <div class="hero-actions">
             <a class="btn btn-red" href="tel:7325565590">Call Now</a>
-            <a class="btn btn-dark" href="fence-repair-south-jersey.html">View Fence Repairs</a>
+            <a class="btn btn-dark" href="fence-repair-south-jersey.html" onclick="event.stopPropagation()">View Fence Repairs</a>
           </div>
         </div>
       </div>
-      </a>
     </section>
 
     <section id="services">
@@ -453,10 +565,6 @@
 <div class="pill">Fence repairs</div>
 <div class="pill">Fence gate repairs</div>
 <div class="pill">Fence panel replacement</div>
-
-
-
-
 
 </div>
 </section>
