@@ -348,6 +348,47 @@ body.menu-open .mobile-menu{
   }
 }
 
+
+/* Recent Projects Gallery */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.gallery-card{
+  margin:0;
+  background:var(--panel);
+  border:1px solid #2c2c2c;
+  border-radius:16px;
+  overflow:hidden;
+}
+.gallery-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+  background:#222;
+}
+.gallery-card figcaption{
+  padding:13px 14px;
+  color:#e7e7e7;
+  font-size:14px;
+  line-height:1.4;
+}
+@media(max-width:900px){
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+@media(max-width:560px){
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+  .gallery-card img{
+    height:auto;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -365,6 +406,7 @@ body.menu-open .mobile-menu{
 <a href="#services">Services</a>
 <a href="#service-pages">More Services</a>
 <a href="#areas">Areas</a>
+<a href="#recent-projects">Projects</a>
 <a href="#reviews">Reviews</a>
 <a href="#faq">FAQ</a>
 <a class="quote-btn" href="#quote">Free Quote</a>
@@ -376,6 +418,7 @@ body.menu-open .mobile-menu{
 <a href="#services" onclick="document.body.classList.remove('menu-open')">Services</a>
 <a href="#service-pages" onclick="document.body.classList.remove('menu-open')">More Services</a>
 <a href="#areas" onclick="document.body.classList.remove('menu-open')">Areas</a>
+<a href="#recent-projects" onclick="document.body.classList.remove('menu-open')">Projects</a>
 <a href="#reviews" onclick="document.body.classList.remove('menu-open')">Reviews</a>
 <a href="#faq" onclick="document.body.classList.remove('menu-open')">FAQ</a>
 <a href="#quote" onclick="document.body.classList.remove('menu-open')">Free Quote</a>
@@ -794,6 +837,56 @@ body.menu-open .mobile-menu{
 <p>South Jersey Repairs is positioned for that full home repair and property maintenance need.</p>
 </div>
 </div>
+</section>
+
+
+<section id="recent-projects">
+  <div class="section-head">
+    <h2>Recent Projects</h2>
+    <p>Real home repair, drywall, painting, flooring, and property maintenance work completed across South Jersey.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <figure class="gallery-card">
+      <img src="finished-bedroom-paint-flooring-south-jersey.jpg" alt="Finished bedroom painting, trim, and flooring refresh in South Jersey">
+      <figcaption>Finished bedroom painting, trim, and flooring refresh in South Jersey.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="basement-project-prep-south-jersey.jpg" alt="Basement project prep before flooring and finish work">
+      <figcaption>Basement project prep before flooring and finish work.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="drywall-installation-repair-south-jersey.jpg" alt="Drywall installation, patching, and wall repair work in South Jersey">
+      <figcaption>Drywall installation, patching, and wall repair work in South Jersey.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="finished-basement-flooring-trim-south-jersey.jpg" alt="Finished basement flooring, trim, and interior refresh">
+      <figcaption>Finished basement flooring, trim, and interior refresh.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="ceiling-drywall-repair-south-jersey.jpg" alt="Ceiling drywall repair, patching, and prep work">
+      <figcaption>Ceiling drywall repair, patching, and prep work.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="bedroom-paint-prep-south-jersey.jpg" alt="Bedroom painting prep with protected floors and trim">
+      <figcaption>Bedroom painting prep with protected floors and trim.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="bedroom-painting-project-south-jersey.jpg" alt="Interior bedroom painting and wall repair project">
+      <figcaption>Interior bedroom painting and wall repair project.</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <img src="basement-renovation-prep-south-jersey.jpg" alt="Basement renovation prep, wall repair, and finish work">
+      <figcaption>Basement renovation prep, wall repair, and finish work.</figcaption>
+    </figure>
+  </div>
 </section>
 
 <section id="reviews">
