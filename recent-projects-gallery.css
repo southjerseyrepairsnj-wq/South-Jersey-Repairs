@@ -1,0 +1,45 @@
+/* Recent Projects Gallery */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.gallery-card{
+  margin:0;
+  background:var(--panel);
+  border:1px solid #2c2c2c;
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.gallery-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+  background:#222;
+}
+
+.gallery-card figcaption{
+  padding:13px 14px;
+  color:#e7e7e7;
+  font-size:14px;
+  line-height:1.4;
+}
+
+@media(max-width:900px){
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:560px){
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-card img{
+    height:auto;
+  }
+}
