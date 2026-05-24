@@ -1968,4 +1968,8 @@
   <url><loc>https://southjerseyrepairs.com/bathroom-remodeling-south-jersey.html</loc></url>
   <url><loc>https://southjerseyrepairs.com/bathroom-remodel-guide-south-jersey.html</loc></url>
   <url><loc>https://southjerseyrepairs.com/drywall-repair-guide-south-jersey.html</loc></url>
+  <url>
+    <loc>https://www.southjerseyrepairs.com/home-repair-quote-south-jersey.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
