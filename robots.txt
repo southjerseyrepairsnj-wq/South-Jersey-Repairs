@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.southjerseyrepairs.com/sitemap.xml
+Sitemap: https://southjerseyrepairs.com/sitemap.xml
